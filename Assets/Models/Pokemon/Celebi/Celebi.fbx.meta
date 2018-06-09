@@ -1,0 +1,355 @@
+fileFormatVersion: 2
+guid: f6645bf4b0e03da498d39ba8138a6c17
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Celebi
+    100004: Celebi 1
+    100006: Celebi_end
+    100008: Celebi_skeleton
+    100010: EndHair3
+    100012: EndHair3_end
+    100014: EndHead
+    100016: EndHead_end
+    100018: EndHips
+    100020: EndHips_end
+    100022: EndLFeeler
+    100024: EndLFeeler7
+    100026: EndLFeeler7_end
+    100028: EndLFeeler_end
+    100030: EndLFinger
+    100032: EndLFinger_end
+    100034: EndLFoot
+    100036: EndLFoot_end
+    100038: EndLToe
+    100040: EndLToe_end
+    100042: EndRFeeler
+    100044: EndRFeeler7
+    100046: EndRFeeler7_end
+    100048: EndRFeeler_end
+    100050: EndRFinger
+    100052: EndRFinger_end
+    100054: EndRFoot
+    100056: EndRFoot_end
+    100058: EndRToe
+    100060: EndRToe_end
+    100062: Hair1
+    100064: Hair2
+    100066: Hair3
+    100068: Head
+    100070: Hips
+    100072: LArm
+    100074: LFeeler
+    100076: LFeeler1
+    100078: LFeeler2
+    100080: LFeeler3
+    100082: LFeeler4
+    100084: LFeeler5
+    100086: LFeeler6
+    100088: LFeeler7
+    100090: LFinger
+    100092: LFoot
+    100094: LForeArm
+    100096: LHand
+    100098: LLeg
+    100100: LThigh
+    100102: LToe
+    100104: Neck
+    100106: Origin
+    100108: pm0251_00
+    100110: pm0251_00_BodySkin
+    100112: pm0251_00_BodySkin_end
+    100114: pm0251_00_FeelerSkin
+    100116: pm0251_00_FeelerSkin_end
+    100118: pm0251_00_IrisSkin
+    100120: pm0251_00_IrisSkin_end
+    100122: RArm
+    100124: RFeeler
+    100126: RFeeler1
+    100128: RFeeler2
+    100130: RFeeler3
+    100132: RFeeler4
+    100134: RFeeler5
+    100136: RFeeler6
+    100138: RFeeler7
+    100140: RFinger
+    100142: RFoot
+    100144: RForeArm
+    100146: RHand
+    100148: RLeg
+    100150: RThigh
+    100152: RToe
+    100154: Spine1
+    100156: Spine2
+    100158: Waist
+    400000: //RootNode
+    400002: Celebi
+    400004: Celebi 1
+    400006: Celebi_end
+    400008: Celebi_skeleton
+    400010: EndHair3
+    400012: EndHair3_end
+    400014: EndHead
+    400016: EndHead_end
+    400018: EndHips
+    400020: EndHips_end
+    400022: EndLFeeler
+    400024: EndLFeeler7
+    400026: EndLFeeler7_end
+    400028: EndLFeeler_end
+    400030: EndLFinger
+    400032: EndLFinger_end
+    400034: EndLFoot
+    400036: EndLFoot_end
+    400038: EndLToe
+    400040: EndLToe_end
+    400042: EndRFeeler
+    400044: EndRFeeler7
+    400046: EndRFeeler7_end
+    400048: EndRFeeler_end
+    400050: EndRFinger
+    400052: EndRFinger_end
+    400054: EndRFoot
+    400056: EndRFoot_end
+    400058: EndRToe
+    400060: EndRToe_end
+    400062: Hair1
+    400064: Hair2
+    400066: Hair3
+    400068: Head
+    400070: Hips
+    400072: LArm
+    400074: LFeeler
+    400076: LFeeler1
+    400078: LFeeler2
+    400080: LFeeler3
+    400082: LFeeler4
+    400084: LFeeler5
+    400086: LFeeler6
+    400088: LFeeler7
+    400090: LFinger
+    400092: LFoot
+    400094: LForeArm
+    400096: LHand
+    400098: LLeg
+    400100: LThigh
+    400102: LToe
+    400104: Neck
+    400106: Origin
+    400108: pm0251_00
+    400110: pm0251_00_BodySkin
+    400112: pm0251_00_BodySkin_end
+    400114: pm0251_00_FeelerSkin
+    400116: pm0251_00_FeelerSkin_end
+    400118: pm0251_00_IrisSkin
+    400120: pm0251_00_IrisSkin_end
+    400122: RArm
+    400124: RFeeler
+    400126: RFeeler1
+    400128: RFeeler2
+    400130: RFeeler3
+    400132: RFeeler4
+    400134: RFeeler5
+    400136: RFeeler6
+    400138: RFeeler7
+    400140: RFinger
+    400142: RFoot
+    400144: RForeArm
+    400146: RHand
+    400148: RLeg
+    400150: RThigh
+    400152: RToe
+    400154: Spine1
+    400156: Spine2
+    400158: Waist
+    2100000: pm0251_00_Mouth1.png
+    2100002: pm0251_00_Body1.png
+    2100004: pm0251_00_Eye1.png
+    2100006: pm0251_00_Iris1.png
+    4300000: Celebi
+    7400000: Celebi - Idle
+    7400002: Celebi - Run
+    7400004: Celebi - Walk
+    9500000: //RootNode
+    13700000: Celebi
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0251_00_Body1.png
+    second: {fileID: 2100000, guid: 9e845f28fe6843d4eb31a72e1ee6e210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0251_00_Eye1.png
+    second: {fileID: 2100000, guid: ee9201cd49a441147b8563347223b098, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0251_00_Mouth1.png
+    second: {fileID: 2100000, guid: fd30bc604f95ab4409d2bc8a5c0291b5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Celebi - Idle
+      takeName: Celebi_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Celebi - Run
+      takeName: Celebi_skeleton|Run
+      firstFrame: 0
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Celebi - Walk
+      takeName: Celebi_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 37
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

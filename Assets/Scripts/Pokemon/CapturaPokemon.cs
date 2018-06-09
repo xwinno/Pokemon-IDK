@@ -14,7 +14,6 @@ public class CapturaPokemon : Interactivo {
 
 	void Capturar()
 	{
-			Debug.Log("Adquieres " + pokemon.name);
             bool FueCapturado = EquipoPokemon.instance.Añadir(pokemon);
 
 			if(FueCapturado)

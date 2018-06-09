@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Cubone
   m_EditorClassIdentifier: 
   modelo: {fileID: 1050592056348842, guid: 6d80f6b9328c1264b8493cf81b960a3c, type: 2}
-  icon: {fileID: 21300000, guid: d3da42389437aa043ab483438c4fc0b8, type: 3}
+  icon: {fileID: 21300000, guid: 39ea754aa7f81454eaa7479a1928edaa, type: 3}
   nombre: Cubone
   descripcion: "A Cubone le ahoga la pena porque no volver\xE1 a ver jam\xE1s a su
     madre. La luna le recuerda a veces a ella, y se pone a llorar. Los churretes que

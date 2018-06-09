@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Vulpix
   m_EditorClassIdentifier: 
   modelo: {fileID: 1298073193701262, guid: 0f64613e6047f994894ca512c404bada, type: 2}
-  icon: {fileID: 21300000, guid: 34946d0824b052b488ae75b5ce775fc7, type: 3}
+  icon: {fileID: 21300000, guid: 3d0d4edf2d2625b4d8326789ddbf9408, type: 3}
   nombre: Vulpix
   descripcion: "Al nacer, Vulpix tiene una cola blanca que se divide en seis si recibe
     cari\xF1o por parte de su Entrenador. Las seis colas se le rizan de forma majestuosa."
