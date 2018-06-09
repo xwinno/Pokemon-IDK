@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bed70977a0385e40b4d3ac4eb677c33, type: 3}
+  m_Name: Ditto
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 1248325404856946, guid: 5385acdbefa3ac144a8d81d5accde9e8, type: 2}
+  icon: {fileID: 21300000, guid: d3da42389437aa043ab483438c4fc0b8, type: 3}
+  nombre: Ditto
+  descripcion: "Ditto reorganiza la estructura de sus c\xE9lulas para adoptar otras
+    formas. Pero como intenta transformarse en algo gui\xE1ndose por los datos que
+    tenga almacenados en la memoria, habr\xE1 detalles que se le escapen."
+  numeroPokedex: 132
+  altura: 0.3
+  peso: 4
+  nivel: 5
+  salud: 48
+  ataque: 48
+  defensa: 48
+  ataqueEspecial: 48
+  defensaEspecial: 48
+  velocidad: 48

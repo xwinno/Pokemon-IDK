@@ -1,0 +1,292 @@
+fileFormatVersion: 2
+guid: 4253c0e9f14bb184ebdde13e5478ee3a
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cubone
+    100004: Cubone_skeleton
+    100006: Feeler
+    100008: Feeler_end
+    100010: FeelerA
+    100012: FeelerA_end
+    100014: Head
+    100016: Hips
+    100018: LArm
+    100020: LFingerA1
+    100022: LFingerA2
+    100024: LFingerA2_end
+    100026: LFingerB
+    100028: LFingerB_end
+    100030: LFoot
+    100032: LForeArm
+    100034: LHand
+    100036: LLeg
+    100038: LShoulder
+    100040: LThigh
+    100042: LToe
+    100044: LToe_end
+    100046: Neck
+    100048: Origin
+    100050: pm0104_00
+    100052: pm0104_00_BodySkin
+    100054: pm0104_00_BodySkin_end
+    100056: pm0104_00_HeadSkin
+    100058: pm0104_00_HeadSkin_end
+    100060: pm0104_00_WeaponSkin
+    100062: pm0104_00_WeaponSkin_end
+    100064: RArm
+    100066: RFingerA1
+    100068: RFingerA2
+    100070: RFingerA2_end
+    100072: RFingerB
+    100074: RFingerB_end
+    100076: RFoot
+    100078: RForeArm
+    100080: RHand
+    100082: RLeg
+    100084: RShoulder
+    100086: RThigh
+    100088: RToe
+    100090: RToe_end
+    100092: Spine1
+    100094: Spine2
+    100096: Tail1
+    100098: Tail2
+    100100: Tail2_end
+    100102: Waist
+    400000: //RootNode
+    400002: Cubone
+    400004: Cubone_skeleton
+    400006: Feeler
+    400008: Feeler_end
+    400010: FeelerA
+    400012: FeelerA_end
+    400014: Head
+    400016: Hips
+    400018: LArm
+    400020: LFingerA1
+    400022: LFingerA2
+    400024: LFingerA2_end
+    400026: LFingerB
+    400028: LFingerB_end
+    400030: LFoot
+    400032: LForeArm
+    400034: LHand
+    400036: LLeg
+    400038: LShoulder
+    400040: LThigh
+    400042: LToe
+    400044: LToe_end
+    400046: Neck
+    400048: Origin
+    400050: pm0104_00
+    400052: pm0104_00_BodySkin
+    400054: pm0104_00_BodySkin_end
+    400056: pm0104_00_HeadSkin
+    400058: pm0104_00_HeadSkin_end
+    400060: pm0104_00_WeaponSkin
+    400062: pm0104_00_WeaponSkin_end
+    400064: RArm
+    400066: RFingerA1
+    400068: RFingerA2
+    400070: RFingerA2_end
+    400072: RFingerB
+    400074: RFingerB_end
+    400076: RFoot
+    400078: RForeArm
+    400080: RHand
+    400082: RLeg
+    400084: RShoulder
+    400086: RThigh
+    400088: RToe
+    400090: RToe_end
+    400092: Spine1
+    400094: Spine2
+    400096: Tail1
+    400098: Tail2
+    400100: Tail2_end
+    400102: Waist
+    2100000: pm0104_00_Body1.tga
+    2100002: pm0104_00_Eye1.tga
+    4300000: Cubone
+    7400000: Cubone - Idle
+    7400002: Cubone - Run
+    7400004: Cubone - Walk
+    9500000: //RootNode
+    13700000: Cubone
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0104_00_Body1.tga
+    second: {fileID: 2100000, guid: 469cf6f65871929479d6e7aaf536c1f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0104_00_Eye1.tga
+    second: {fileID: 2100000, guid: 427c6c2892734124eace732eddc48e5f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Cubone - Idle
+      takeName: Cubone_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cubone - Run
+      takeName: Cubone_skeleton|Run
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cubone - Walk
+      takeName: Cubone_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

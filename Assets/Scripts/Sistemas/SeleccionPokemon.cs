@@ -6,6 +6,7 @@ public class SeleccionPokemon : Interactivo {
 
 #region Variables
 
+	public GameObject Prefabs;
 	public GameObject PlayerScripts;
 	public GameObject ChoiseTwo;
 	public Material[] EeveeSelected;
@@ -24,9 +25,7 @@ public class SeleccionPokemon : Interactivo {
 
 	void Awake()
 	{
-		this.gameObject.GetComponent<Follow>().enabled = false;
 		this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-		ChoiseTwo.GetComponent<Follow>().enabled = false;
 		ChoiseTwo.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 	}
 
@@ -69,7 +68,7 @@ public class SeleccionPokemon : Interactivo {
 			//Añades a tu equipo al elegido
 			Debug.Log("Adquieres " + pokemon.name);
             EquipoPokemon.instance.Añadir(pokemon);
-			this.gameObject.GetComponent<SeleccionPokemon>().enabled = false;
+			Prefabs.GetComponent<AdministradorPrefabs>().Prefabs[0].GetComponent<LanzarPokeball>().pokemon = pokemon;
 
 			//Mover Camara
 			ElegirPokemon.SetTrigger("ATerceraPersona");
@@ -87,6 +86,7 @@ public class SeleccionPokemon : Interactivo {
 			//Añades a tu equipo al elegido
 			Debug.Log("Adquieres " + pokemon2.name);
             EquipoPokemon.instance.Añadir(pokemon2);
+			Prefabs.GetComponent<AdministradorPrefabs>().Prefabs[0].GetComponent<LanzarPokeball>().pokemon = pokemon2;
 			this.gameObject.GetComponent<SeleccionPokemon>().enabled = false;
 
 			//Mover Camara

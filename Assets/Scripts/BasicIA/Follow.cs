@@ -5,17 +5,17 @@ using UnityEngine;
 public class Follow : MonoBehaviour {
 
 	public GameObject PokemonTransform;
-	public Transform Target;
+	Transform Target;
+	GameObject PlayerScripts;
 	public Animator Pokemon;
 	public float Velocidad = 1.5f;
 	public float VelocidadR = 4f;
 	public float MinDistance = 2f;
-	public bool Run;
 
-	// Use this for initialization
-	void Start () 
+	void Awake()
 	{
-		Run = false;
+		PlayerScripts = GameObject.FindGameObjectWithTag("Player");
+		Target = PlayerScripts.transform;
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,7 @@ public class Follow : MonoBehaviour {
 	{
 		transform.LookAt(Target);
 
-		if(Vector3.Distance(transform.position,Target.position) >= MinDistance && Run == false)
+		if(Vector3.Distance(transform.position,Target.position) >= MinDistance && PlayerScripts.GetComponent<PlayerManagement>().Run == false)
 		{
 			transform.position += transform.forward * Velocidad * Time.deltaTime;
 			
@@ -32,20 +32,28 @@ public class Follow : MonoBehaviour {
 			Pokemon.SetBool("Walk", true);
 		}
 
-		else if(Vector3.Distance(transform.position,Target.position) >= MinDistance && Run == true)
+		else if(Vector3.Distance(transform.position,Target.position) >= MinDistance && PlayerScripts.GetComponent<PlayerManagement>().Run == true)
 		{
 			transform.position += transform.forward * VelocidadR * Time.deltaTime;
 
 			Pokemon.SetBool("Idle", false);
 			Pokemon.SetBool("Run", true);
 			Pokemon.SetBool("Walk", false);
+
 		}
 
-		if(Vector3.Distance(transform.position,Target.position) <= MinDistance && Run == false)
+		if(Vector3.Distance(transform.position,Target.position) <= MinDistance && PlayerScripts.GetComponent<PlayerManagement>().Run == false)
 		{
 			Pokemon.SetBool("Idle", true);
 			Pokemon.SetBool("Run", false);
 			Pokemon.SetBool("Walk", false);
+		}
+
+		if (Input.GetKeyDown(KeyCode.R) && PlayerScripts.GetComponent<PlayerManagement>().pokemonCount == 1)
+		{
+			
+			Destroy(this.gameObject);
+			PlayerScripts.GetComponent<PlayerManagement>().pokemonCount = 0;
 		}
 	}
 }

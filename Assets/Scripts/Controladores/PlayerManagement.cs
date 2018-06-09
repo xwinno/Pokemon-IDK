@@ -6,11 +6,6 @@ using UnityEngine.UI;
 public class PlayerManagement : MonoBehaviour {
 	
 #region Variables
-
-	//Variables Sistema Vida
-	public Sprite[] OpcionesVida = new Sprite[6];
-	public Image VidasUI;
-	int Vidas;
 	
 	//Variables Sistema Movimiento
 	Rigidbody RPlayer;
@@ -19,6 +14,7 @@ public class PlayerManagement : MonoBehaviour {
 	float InputY;
 	float Velocidad = 1.5f;
 	public bool BattleMode = false;
+	public bool Run;
 	public float JumpForce = 5;
 	public float FuerzaCaida = 2.5f;
 	public LayerMask TierraLayers;
@@ -35,6 +31,7 @@ public class PlayerManagement : MonoBehaviour {
 	//Variables Animaciones
 	public Animator PlayerAnim;
 	public GameObject DanceCamera;
+	public int pokemonCount = 0;
 
 #endregion
 
@@ -76,7 +73,6 @@ public class PlayerManagement : MonoBehaviour {
 	void Awake () 
 	{
 		Monedas = 0;
-		Vidas = 5;
 		CPlayer = GetComponent<CapsuleCollider>();
 		RPlayer = GetComponent<Rigidbody>();
 	}
@@ -89,54 +85,55 @@ public class PlayerManagement : MonoBehaviour {
 		InputY = Input.GetAxis("Vertical");
 
 		//Lanzar Pokeball
-		if(Input.GetKeyDown(KeyCode.R))
+		if(Input.GetKeyDown(KeyCode.R) && pokemonCount == 0)
 		{
 			PlayerAnim.SetTrigger("LanzarPokeball");
-			//ActivaPokemon
+			pokemonCount = 1;
 		}
 
-		else if (Input.GetKeyDown(KeyCode.R))
+		if(Input.GetKeyDown(KeyCode.Alpha2))
 		{
-			
-			//DesctivaPokemon
+			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
+			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[1];
+			EquipoPokemon.instance.pokemons[1] = TemporalSlot;
+			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha3))
+		{
+			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
+			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[2];
+			EquipoPokemon.instance.pokemons[2] = TemporalSlot;
+			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha4))
+		{
+			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
+			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[3];
+			EquipoPokemon.instance.pokemons[3] = TemporalSlot;
+			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha5))
+		{
+			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
+			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[4];
+			EquipoPokemon.instance.pokemons[4] = TemporalSlot;
+			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha6))
+		{
+			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
+			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[5];
+			EquipoPokemon.instance.pokemons[5] = TemporalSlot;
+			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
 		}
 
 		//Llamadas
 		UpdateCoins();
 		PlayerAnimations();
-	}
-
-	void LateUpdate()
-	{	
-		//Representa la vida en la UI	
-		if (Vidas == 5)
-		{
-			VidasUI.sprite = OpcionesVida[5];
-		}
-		
-		if (Vidas == 4)
-		{
-			VidasUI.sprite = OpcionesVida[4];
-		}
-		
-		if (Vidas == 3)
-		{
-			VidasUI.sprite = OpcionesVida[3];
-		}
-		
-		if (Vidas == 2)
-		{
-			VidasUI.sprite = OpcionesVida[2];
-		}
-
-		if (Vidas == 1)
-		{
-			VidasUI.sprite = OpcionesVida[1];
-		}
-		if (Vidas == 0)
-		{
-			VidasUI.sprite = OpcionesVida[0];
-		}
 	}
 
 	void FixedUpdate()
@@ -146,40 +143,41 @@ public class PlayerManagement : MonoBehaviour {
 		if(BattleMode == false)
 		{
 		
-		transform.Translate(Velocidad*Input.GetAxis("Horizontal")*Time.deltaTime,0f,Velocidad*Input.GetAxis("Vertical")*Time.deltaTime);
+			transform.Translate(Velocidad*Input.GetAxis("Horizontal")*Time.deltaTime,0f,Velocidad*Input.GetAxis("Vertical")*Time.deltaTime);
 
-		if(EnTierra() && Input.GetKeyDown(KeyCode.Space))
-		{
-			PlayerAnim.SetTrigger("Jump");
-			RPlayer.AddForce(Vector3.up * JumpForce);
-		}
+			if(EnTierra() && Input.GetKeyDown(KeyCode.Space))
+			{
+				PlayerAnim.SetTrigger("Jump");
+				RPlayer.AddForce(Vector3.up * JumpForce);
+			}
 
-		if(Input.GetKey(KeyCode.LeftShift))
-		{
-			Velocidad = 5;
-			PlayerAnim.SetBool("Run", true);
-		}
+			if(Input.GetKey(KeyCode.LeftShift))
+			{
+				Velocidad = 5;
+				PlayerAnim.SetBool("Run", true);
+				Run = true;
+			}
 
-		else if(Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
-		{
-			Velocidad = 5;
-			PlayerAnim.SetBool("Run", true);
-		}
+			else if(Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
+			{
+				Velocidad = 5;
+				PlayerAnim.SetBool("Run", true);
+				Run = true;
+			}
 
+			if(Input.GetKeyUp(KeyCode.LeftShift))
+			{
+				Velocidad = 2;
+				PlayerAnim.SetBool("Run", false);
+				Run = false;
+			}
 
-		if(Input.GetKeyUp(KeyCode.LeftShift))
-		{
-			Velocidad = 2;
-			PlayerAnim.SetBool("Run", false);
-		}
-
-		if(Input.GetKeyUp(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
-		{
-			Velocidad = 2;
-			PlayerAnim.SetBool("Run", false);
-		}
-
-
+			if(Input.GetKeyUp(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
+			{
+				Velocidad = 2;
+				PlayerAnim.SetBool("Run", false);
+				Run = false;
+			}
 		}
 	}
 

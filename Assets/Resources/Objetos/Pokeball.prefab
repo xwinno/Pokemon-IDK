@@ -527,6 +527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fuerza: 500
   Player: {fileID: 0}
+  pokemon: {fileID: 11400000, guid: eb71f791fcb922042bc83c2b42072403, type: 2}
 --- !u!114 &114642127919907978
 MonoBehaviour:
   m_ObjectHideFlags: 1
