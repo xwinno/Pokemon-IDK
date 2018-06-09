@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: fe46f48c29711a1479b3804ad6e58ee1
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Abra
+    100004: Abra_skeleton
+    100006: Head
+    100008: Hips
+    100010: Jaw
+    100012: Jaw_end
+    100014: LArm
+    100016: LEar
+    100018: LEar_end
+    100020: LFingerA1
+    100022: LFingerA2
+    100024: LFingerA2_end
+    100026: LFingerB1
+    100028: LFingerB2
+    100030: LFingerB2_end
+    100032: LFingerC1
+    100034: LFingerC2
+    100036: LFingerC2_end
+    100038: LFoot
+    100040: LForeArm
+    100042: LHand
+    100044: LLeg
+    100046: LShoulder
+    100048: LThigh
+    100050: LToeA1
+    100052: LToeA2
+    100054: LToeA2_end
+    100056: LToeB1
+    100058: LToeB2
+    100060: LToeB2_end
+    100062: LToeC1
+    100064: LToeC2
+    100066: LToeC2_end
+    100068: Origin
+    100070: pm0063_00
+    100072: pm0063_00_Skin
+    100074: pm0063_00_Skin_end
+    100076: RArm
+    100078: REar
+    100080: REar_end
+    100082: RFingerA1
+    100084: RFingerA2
+    100086: RFingerA2_end
+    100088: RFingerB1
+    100090: RFingerB2
+    100092: RFingerB2_end
+    100094: RFingerC1
+    100096: RFingerC2
+    100098: RFingerC2_end
+    100100: RFoot
+    100102: RForeArm
+    100104: RHand
+    100106: RLeg
+    100108: RShoulder
+    100110: RThigh
+    100112: RToeA1
+    100114: RToeA2
+    100116: RToeA2_end
+    100118: RToeB1
+    100120: RToeB2
+    100122: RToeB2_end
+    100124: RToeC1
+    100126: RToeC2
+    100128: RToeC2_end
+    100130: Spine1
+    100132: Spine2
+    100134: Tail1
+    100136: Tail2
+    100138: Tail3
+    100140: Tail4
+    100142: Tail5
+    100144: Tail5_end
+    100146: Waist
+    400000: //RootNode
+    400002: Abra
+    400004: Abra_skeleton
+    400006: Head
+    400008: Hips
+    400010: Jaw
+    400012: Jaw_end
+    400014: LArm
+    400016: LEar
+    400018: LEar_end
+    400020: LFingerA1
+    400022: LFingerA2
+    400024: LFingerA2_end
+    400026: LFingerB1
+    400028: LFingerB2
+    400030: LFingerB2_end
+    400032: LFingerC1
+    400034: LFingerC2
+    400036: LFingerC2_end
+    400038: LFoot
+    400040: LForeArm
+    400042: LHand
+    400044: LLeg
+    400046: LShoulder
+    400048: LThigh
+    400050: LToeA1
+    400052: LToeA2
+    400054: LToeA2_end
+    400056: LToeB1
+    400058: LToeB2
+    400060: LToeB2_end
+    400062: LToeC1
+    400064: LToeC2
+    400066: LToeC2_end
+    400068: Origin
+    400070: pm0063_00
+    400072: pm0063_00_Skin
+    400074: pm0063_00_Skin_end
+    400076: RArm
+    400078: REar
+    400080: REar_end
+    400082: RFingerA1
+    400084: RFingerA2
+    400086: RFingerA2_end
+    400088: RFingerB1
+    400090: RFingerB2
+    400092: RFingerB2_end
+    400094: RFingerC1
+    400096: RFingerC2
+    400098: RFingerC2_end
+    400100: RFoot
+    400102: RForeArm
+    400104: RHand
+    400106: RLeg
+    400108: RShoulder
+    400110: RThigh
+    400112: RToeA1
+    400114: RToeA2
+    400116: RToeA2_end
+    400118: RToeB1
+    400120: RToeB2
+    400122: RToeB2_end
+    400124: RToeC1
+    400126: RToeC2
+    400128: RToeC2_end
+    400130: Spine1
+    400132: Spine2
+    400134: Tail1
+    400136: Tail2
+    400138: Tail3
+    400140: Tail4
+    400142: Tail5
+    400144: Tail5_end
+    400146: Waist
+    2100000: pm0063_00_Body1.tga
+    4300000: Abra
+    7400000: Abra - Idle
+    7400002: Abra - Run
+    7400004: Abra - Walk
+    9500000: //RootNode
+    13700000: Abra
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0063_00_Body1.tga
+    second: {fileID: 2100000, guid: a2fb80c271fbc9c44ac2481e7655c856, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Abra - Idle
+      takeName: Abra_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Abra - Run
+      takeName: Abra_skeleton|Run
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Abra - Walk
+      takeName: Abra_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: cde4425ecf6cbd9449efa2cc54e8d101
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Feeler
+    100002: Feeler_end
+    100004: Hair
+    100006: Hair_end
+    100008: Head
+    100010: Hips
+    100012: LArm
+    100014: LEar
+    100016: LEar_end
+    100018: LFinger
+    100020: LFinger_end
+    100022: LFoot
+    100024: LForeArm
+    100026: LHand
+    100028: LLeg
+    100030: LShoulder
+    100032: LTailA1
+    100034: LTailA2
+    100036: LTailA3
+    100038: LTailA4
+    100040: LTailA4_end
+    100042: LTailB1
+    100044: LTailB2
+    100046: LTailB3
+    100048: LTailB4
+    100050: LTailB4_end
+    100052: LTailC1
+    100054: LTailC2
+    100056: LTailC3
+    100058: LTailC4
+    100060: LTailC4_end
+    100062: LThigh
+    100064: LToe1
+    100066: LToe2
+    100068: LToe2_end
+    100070: Neck
+    100072: Origin
+    100074: pm0037_00
+    100076: pm0037_00_BodySkin
+    100078: pm0037_00_BodySkin_end
+    100080: RArm
+    100082: REar
+    100084: REar_end
+    100086: RFinger
+    100088: RFinger_end
+    100090: RFoot
+    100092: RForeArm
+    100094: RHand
+    100096: RLeg
+    100098: RShoulder
+    100100: RTailA1
+    100102: RTailA2
+    100104: RTailA3
+    100106: RTailA4
+    100108: RTailA4_end
+    100110: RTailB1
+    100112: RTailB2
+    100114: RTailB3
+    100116: RTailB4
+    100118: RTailB4_end
+    100120: RTailC1
+    100122: RTailC2
+    100124: RTailC3
+    100126: RTailC4
+    100128: RTailC4_end
+    100130: RThigh
+    100132: RToe1
+    100134: RToe2
+    100136: RToe2_end
+    100138: Spine1
+    100140: Spine2
+    100142: Vulpix
+    100144: //RootNode
+    100146: Vulpix_skeleton
+    100148: Waist
+    400000: Feeler
+    400002: Feeler_end
+    400004: Hair
+    400006: Hair_end
+    400008: Head
+    400010: Hips
+    400012: LArm
+    400014: LEar
+    400016: LEar_end
+    400018: LFinger
+    400020: LFinger_end
+    400022: LFoot
+    400024: LForeArm
+    400026: LHand
+    400028: LLeg
+    400030: LShoulder
+    400032: LTailA1
+    400034: LTailA2
+    400036: LTailA3
+    400038: LTailA4
+    400040: LTailA4_end
+    400042: LTailB1
+    400044: LTailB2
+    400046: LTailB3
+    400048: LTailB4
+    400050: LTailB4_end
+    400052: LTailC1
+    400054: LTailC2
+    400056: LTailC3
+    400058: LTailC4
+    400060: LTailC4_end
+    400062: LThigh
+    400064: LToe1
+    400066: LToe2
+    400068: LToe2_end
+    400070: Neck
+    400072: Origin
+    400074: pm0037_00
+    400076: pm0037_00_BodySkin
+    400078: pm0037_00_BodySkin_end
+    400080: RArm
+    400082: REar
+    400084: REar_end
+    400086: RFinger
+    400088: RFinger_end
+    400090: RFoot
+    400092: RForeArm
+    400094: RHand
+    400096: RLeg
+    400098: RShoulder
+    400100: RTailA1
+    400102: RTailA2
+    400104: RTailA3
+    400106: RTailA4
+    400108: RTailA4_end
+    400110: RTailB1
+    400112: RTailB2
+    400114: RTailB3
+    400116: RTailB4
+    400118: RTailB4_end
+    400120: RTailC1
+    400122: RTailC2
+    400124: RTailC3
+    400126: RTailC4
+    400128: RTailC4_end
+    400130: RThigh
+    400132: RToe1
+    400134: RToe2
+    400136: RToe2_end
+    400138: Spine1
+    400140: Spine2
+    400142: Vulpix
+    400144: //RootNode
+    400146: Vulpix_skeleton
+    400148: Waist
+    2100000: pm0037_00_BodyA1.tga
+    2100002: pm0037_00_BodyB1.tga
+    2100004: pm0037_00_Eye1.tga
+    2100006: pm0037_00_Mouth1.tga
+    4300000: Vulpix
+    7400000: Vulpix - Idle
+    7400002: Vulpix - Run
+    7400004: Vulpix - Walk
+    9500000: //RootNode
+    13700000: Vulpix
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0037_00_BodyA1.tga
+    second: {fileID: 2100000, guid: 9477857375c436f48864e8423f391adf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0037_00_BodyB1.tga
+    second: {fileID: 2100000, guid: 63fbf911892768048ad00823dbb867f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0037_00_Eye1.tga
+    second: {fileID: 2100000, guid: b1e20a4b46b96c5469802d6dbe74cfd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0037_00_Mouth1.tga
+    second: {fileID: 2100000, guid: 91f39a90cac8d274fba8ef87f20a8305, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Vulpix - Idle
+      takeName: Vulpix_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Vulpix - Run
+      takeName: Vulpix_skeleton|Run
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Vulpix - Walk
+      takeName: Vulpix_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 4c3f4428aca9cca4eb1b3d92791bbc98
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Eevee
+    100004: Eevee 1
+    100006: Eevee_end
+    100008: Eevee_skeleton
+    100010: EndFeelerA2
+    100012: EndFeelerA2_end
+    100014: EndFeelerB2
+    100016: EndFeelerB2_end
+    100018: EndHair
+    100020: EndHair_end
+    100022: EndHips
+    100024: EndHips_end
+    100026: EndLEar2
+    100028: EndLEar2_end
+    100030: EndLFeeler2
+    100032: EndLFeeler2_end
+    100034: EndLFoot
+    100036: EndLFoot_end
+    100038: EndLHand
+    100040: EndLHand_end
+    100042: EndLToe
+    100044: EndLToe_end
+    100046: EndREar2
+    100048: EndREar2_end
+    100050: EndRFeeler2
+    100052: EndRFeeler2_end
+    100054: EndRFoot
+    100056: EndRFoot_end
+    100058: EndRHand
+    100060: EndRHand_end
+    100062: EndRToe
+    100064: EndRToe_end
+    100066: EndTail3
+    100068: EndTail3_end
+    100070: FeelerA1
+    100072: FeelerA2
+    100074: FeelerB1
+    100076: FeelerB2
+    100078: Hair
+    100080: Head
+    100082: Hips
+    100084: LArm
+    100086: LEar1
+    100088: LEar2
+    100090: LFeeler1
+    100092: LFeeler2
+    100094: LFoot
+    100096: LForeArm
+    100098: LHand
+    100100: LLeg
+    100102: LShoulder
+    100104: LThigh
+    100106: LToe
+    100108: Neck
+    100110: Origin
+    100112: pm0133_00
+    100114: pm0133_00_Skin
+    100116: pm0133_00_Skin_end
+    100118: RArm
+    100120: REar1
+    100122: REar2
+    100124: RFeeler1
+    100126: RFeeler2
+    100128: RFoot
+    100130: RForeArm
+    100132: RHand
+    100134: RLeg
+    100136: RShoulder
+    100138: RThigh
+    100140: RToe
+    100142: Spine1
+    100144: Spine2
+    100146: Tail1
+    100148: Tail2
+    100150: Tail3
+    100152: Waist
+    400000: //RootNode
+    400002: Eevee
+    400004: Eevee 1
+    400006: Eevee_end
+    400008: Eevee_skeleton
+    400010: EndFeelerA2
+    400012: EndFeelerA2_end
+    400014: EndFeelerB2
+    400016: EndFeelerB2_end
+    400018: EndHair
+    400020: EndHair_end
+    400022: EndHips
+    400024: EndHips_end
+    400026: EndLEar2
+    400028: EndLEar2_end
+    400030: EndLFeeler2
+    400032: EndLFeeler2_end
+    400034: EndLFoot
+    400036: EndLFoot_end
+    400038: EndLHand
+    400040: EndLHand_end
+    400042: EndLToe
+    400044: EndLToe_end
+    400046: EndREar2
+    400048: EndREar2_end
+    400050: EndRFeeler2
+    400052: EndRFeeler2_end
+    400054: EndRFoot
+    400056: EndRFoot_end
+    400058: EndRHand
+    400060: EndRHand_end
+    400062: EndRToe
+    400064: EndRToe_end
+    400066: EndTail3
+    400068: EndTail3_end
+    400070: FeelerA1
+    400072: FeelerA2
+    400074: FeelerB1
+    400076: FeelerB2
+    400078: Hair
+    400080: Head
+    400082: Hips
+    400084: LArm
+    400086: LEar1
+    400088: LEar2
+    400090: LFeeler1
+    400092: LFeeler2
+    400094: LFoot
+    400096: LForeArm
+    400098: LHand
+    400100: LLeg
+    400102: LShoulder
+    400104: LThigh
+    400106: LToe
+    400108: Neck
+    400110: Origin
+    400112: pm0133_00
+    400114: pm0133_00_Skin
+    400116: pm0133_00_Skin_end
+    400118: RArm
+    400120: REar1
+    400122: REar2
+    400124: RFeeler1
+    400126: RFeeler2
+    400128: RFoot
+    400130: RForeArm
+    400132: RHand
+    400134: RLeg
+    400136: RShoulder
+    400138: RThigh
+    400140: RToe
+    400142: Spine1
+    400144: Spine2
+    400146: Tail1
+    400148: Tail2
+    400150: Tail3
+    400152: Waist
+    2100000: pm0133_00_Body1.png
+    2100002: pm0133_00_Eye1.png
+    2100004: pm0133_00_Mouth1.png
+    4300000: Eevee
+    7400000: Eevee - Idle
+    7400002: Eevee - Run
+    7400004: Eevee - Walk
+    9500000: //RootNode
+    13700000: Eevee
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0133_00_Body1.png
+    second: {fileID: 2100000, guid: 7b21cd8c50021724399eaa67e14db3b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0133_00_Eye1.png
+    second: {fileID: 2100000, guid: cedfff0b5d47f9c46959d8ee6d009469, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0133_00_Mouth1.png
+    second: {fileID: 2100000, guid: 699d620a06931084288de82873ddd900, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Eevee - Idle
+      takeName: Eevee_skeleton|Eevee_Idle
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Eevee - Run
+      takeName: Eevee_skeleton|Eevee_Run
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Eevee - Walk
+      takeName: Eevee_skeleton|Eevee_Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.02
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

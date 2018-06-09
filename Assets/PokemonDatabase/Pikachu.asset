@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bed70977a0385e40b4d3ac4eb677c33, type: 3}
+  m_Name: Pikachu
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 100078, guid: e69f28148f7567548b81632bed279c92, type: 3}
+  icon: {fileID: 21300000, guid: 2ecdaa295adbccd43a6a75ec75818423, type: 3}
+  nombre: Pikachu
+  descripcion: "Cada vez que un Pikachu se encuentra con algo nuevo, le lanza una
+    descarga el\xE9ctrica. Cuando se ve alguna baya chamuscada, es muy probable que
+    sea obra de un Pikachu, ya que a veces no controlan la intensidad de la descarga."
+  numeroPokedex: 25
+  altura: 0.4
+  peso: 6
+  nivel: 5
+  salud: 35
+  ataque: 55
+  defensa: 40
+  ataqueEspecial: 50
+  defensaEspecial: 50
+  velocidad: 90

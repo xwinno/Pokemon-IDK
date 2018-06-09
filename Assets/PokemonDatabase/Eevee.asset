@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bed70977a0385e40b4d3ac4eb677c33, type: 3}
+  m_Name: Eevee
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 100000, guid: 4c3f4428aca9cca4eb1b3d92791bbc98, type: 3}
+  icon: {fileID: 21300000, guid: d6cb9a9911df0c64f8ea853339d793d2, type: 3}
+  nombre: Eevee
+  descripcion: "La configuraci\xF3n gen\xE9tica de Eevee le permite mutar y adaptarse
+    enseguida a cualquier medio en el que viva. La evoluci\xF3n de este Pok\xE9mon
+    suele ser posible gracias a las radiaciones emitidas por varias piedras."
+  numeroPokedex: 133
+  altura: 0.3
+  peso: 6.5
+  nivel: 5
+  salud: 55
+  ataque: 55
+  defensa: 50
+  ataqueEspecial: 45
+  defensaEspecial: 65
+  velocidad: 55
