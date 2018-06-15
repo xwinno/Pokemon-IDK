@@ -27,3 +27,8 @@ MonoBehaviour:
   ataqueEspecial: 50
   defensaEspecial: 50
   velocidad: 90
+  movimientos:
+  - {fileID: 11400000, guid: dc7dbf3d8ba7bbd47a29d059e38ee925, type: 2}
+  - {fileID: 11400000, guid: 579d4879c6a62f34890371fb43969262, type: 2}
+  - {fileID: 11400000, guid: 2a17117ef85ebb54497b0d112f43988f, type: 2}
+  - {fileID: 0}

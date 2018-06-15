@@ -21,6 +21,8 @@ public class PokemonData : ScriptableObject {
 	public int defensaEspecial;
 	public int velocidad;
 
+	public List<Movimientos> movimientos = new List<Movimientos>();
+
 
 
 }

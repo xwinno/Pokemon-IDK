@@ -27,3 +27,8 @@ MonoBehaviour:
   ataqueEspecial: 40
   defensaEspecial: 50
   velocidad: 35
+  movimientos:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
