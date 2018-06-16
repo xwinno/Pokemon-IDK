@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AbrirBatallaUI : MonoBehaviour {
+public class SistemaBatalla : MonoBehaviour {
 
 	
 	public Text Movimiento1;
@@ -12,7 +12,10 @@ public class AbrirBatallaUI : MonoBehaviour {
 	public Text Movimiento4;
 	public GameObject BackgroundBatalla;
 	public GameObject BackgroundMovimientos;
+	public PokemonBattle PokemonRival;
+	public IniciarBatallaLegendarios MusicaBatalla;
 	public GameObject PlayerScripts;
+	public int Daño;
 	bool Movimientos;
 	
 	
@@ -53,6 +56,21 @@ public class AbrirBatallaUI : MonoBehaviour {
 			BackgroundMovimientos.SetActive(false);
 			Movimientos = false;
 		}
+	}
+
+	public void Huir()
+	{	
+		MusicaBatalla = Object.FindObjectOfType<IniciarBatallaLegendarios>();
+		BackgroundBatalla.SetActive(false);
+		MusicaBatalla.BattleMusic.Stop();
+		PlayerScripts.GetComponent<PlayerManagement>().BattleMode = false;
+	}
+	public void Movi1()
+	{
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+		Daño = movimiento.movimientos[0].Daño;
+		PokemonRival.HP -= Daño;
 	}
 
 }

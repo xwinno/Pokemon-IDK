@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PokemonBattle : Movimientos {
+public class PokemonBattle : MonoBehaviour {
 
 	public PokemonData pokemon;
 	public int HP;
@@ -20,14 +20,9 @@ public class PokemonBattle : Movimientos {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (HP == 0)
+		if (HP <= 0)
 		{
-			
+			Destroy(gameObject);
 		}
-	}
-
-	public override void Atacar()
-	{
-		base.Atacar();
 	}
 }

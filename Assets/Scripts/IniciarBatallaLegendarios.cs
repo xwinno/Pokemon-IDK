@@ -7,9 +7,9 @@ public class IniciarBatallaLegendarios : MonoBehaviour {
 	public GameObject PlayerScripts;
 	public GameObject CloseCameraEnemy;
 	public GameObject CloseCameraTeam;
-	public GameObject GeneralBattle;
 	public GameObject ThirdPerson;
 	public AudioSource BattleMusic;
+	public GameObject Background;
 	public float RadioVisible = 1.5f;
 
 	// Use this for initialization
@@ -23,27 +23,15 @@ public class IniciarBatallaLegendarios : MonoBehaviour {
 	{
 		
 		float Distancia = Vector3.Distance (PlayerScripts.transform.position, transform.position);
+		var ModoBatalla = PlayerScripts.GetComponent<PlayerManagement>();
 
 		if (Distancia <= RadioVisible && (Input.GetKeyDown(KeyCode.E)))
 		{
-			
-			ThirdPerson.GetComponent<Camera>().enabled = false;
-			CloseCameraEnemy.GetComponent<Camera>().enabled = true;
+			ModoBatalla.BattleMode = true;
 			BattleMusic.Play();
+			Background.SetActive(true);
 		}
 	}
-
-	void OnCollisionEnter(Collision other)
-	{
-		if(other.gameObject.CompareTag("Pokeball"))
-		{
-			ThirdPerson.GetComponent<Camera>().enabled = false;
-			CloseCameraEnemy.GetComponent<Camera>().enabled = true;
-			BattleMusic.Play();
-			Destroy(other.gameObject);
-		}
-	}
-
 	void OnDrawGizmos()
 	{
 		Gizmos.color = Color.blue;

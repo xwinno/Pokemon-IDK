@@ -7,6 +7,8 @@ public class PlayerManagement : MonoBehaviour {
 	
 #region Variables
 	
+	public static PlayerManagement instance;
+
 	//Variables Sistema Movimiento
 	Rigidbody RPlayer;
 	CapsuleCollider CPlayer;

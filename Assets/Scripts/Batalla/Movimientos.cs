@@ -10,11 +10,4 @@ public class Movimientos : ScriptableObject {
 	public int PP;
 	public string Tipo;
 
-
-	public virtual void Atacar()
-	{
-		var Enemigo = Enemy.instance.PokemonEnemigo.GetComponent<PokemonBattle>();
-		Enemigo.HP -= Daño;
-	}
-
 }

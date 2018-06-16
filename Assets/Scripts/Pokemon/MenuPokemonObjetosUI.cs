@@ -6,6 +6,7 @@ public class MenuPokemonObjetosUI : MonoBehaviour {
 
 	public Transform SlotControl;
 	public GameObject MenuPokemon;
+	public GameObject PlayerScripts;
 	Inventario inventario;
 	EquipoPokemon equipo;
 	PokemonSlot[] slots;
@@ -25,7 +26,7 @@ public class MenuPokemonObjetosUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if(Input.GetKeyDown(KeyCode.Tab))
+		if(Input.GetKeyDown(KeyCode.Tab) && PlayerScripts.GetComponent<PlayerManagement>().BattleMode == false)
 		{
 			MenuPokemon.SetActive(!MenuPokemon.activeSelf);
 		}
