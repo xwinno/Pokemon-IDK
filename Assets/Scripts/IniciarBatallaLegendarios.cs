@@ -10,6 +10,7 @@ public class IniciarBatallaLegendarios : MonoBehaviour {
 	public GameObject ThirdPerson;
 	public AudioSource BattleMusic;
 	public GameObject Background;
+	public GameObject GeneralCamera;
 	public float RadioVisible = 1.5f;
 
 	// Use this for initialization
@@ -28,6 +29,9 @@ public class IniciarBatallaLegendarios : MonoBehaviour {
 		if (Distancia <= RadioVisible && (Input.GetKeyDown(KeyCode.E)))
 		{
 			ModoBatalla.BattleMode = true;
+			GeneralCamera.GetComponent<Camera>().enabled = true;
+			ThirdPerson.GetComponent<Camera>().enabled = false;
+			ThirdPerson.GetComponent<CameraController>().enabled = false;
 			BattleMusic.Play();
 			Background.SetActive(true);
 		}

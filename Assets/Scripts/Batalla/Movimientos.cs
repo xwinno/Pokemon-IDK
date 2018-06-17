@@ -5,7 +5,7 @@ public class Movimientos : ScriptableObject {
 
 
 	public string Nombre;
-	public int Daño;
+	public int Potencia;
 	public int Precision;
 	public int PP;
 	public string Tipo;

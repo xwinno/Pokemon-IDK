@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3af7b2fc86d0e0444998d0bfbe34cabc, type: 3}
-  m_Name: Impactrueno
+  m_Name: Transformacion
   m_EditorClassIdentifier: 
-  Nombre: Impactrueno
-  Potencia: 40
+  Nombre: Transformacion
+  "Da\xF1o": 0
   Precision: 100
-  PP: 30
-  Tipo: Electrico
+  PP: 10
+  Tipo: Normal

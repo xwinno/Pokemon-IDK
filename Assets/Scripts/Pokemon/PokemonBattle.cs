@@ -5,6 +5,12 @@ using UnityEngine;
 public class PokemonBattle : MonoBehaviour {
 
 	public PokemonData pokemon;
+	public GameObject PlayerScripts;
+	public AudioSource BackgroundBatalla;
+	public GameObject MovimientosUI;
+	public GameObject MenuBatallaUI;
+	public GameObject ThirdPerson;
+	public GameObject GeneralBatalla;
 	public int HP;
 	public	int Ataque;
 	public int Defensa;
@@ -13,8 +19,6 @@ public class PokemonBattle : MonoBehaviour {
 	void Start () 
 	{
 		HP = pokemon.salud;
-		Ataque = pokemon.ataque;
-		Defensa = pokemon.defensa;
 	}
 	
 	// Update is called once per frame
@@ -22,7 +26,14 @@ public class PokemonBattle : MonoBehaviour {
 	{
 		if (HP <= 0)
 		{
-			Destroy(gameObject);
+			this.gameObject.SetActive(false);
+			MenuBatallaUI.SetActive(false);
+			MovimientosUI.SetActive(false);
+			BackgroundBatalla.Stop();
+			ThirdPerson.GetComponent<Camera>().enabled = true;
+			ThirdPerson.GetComponent<CameraController>().enabled = true;
+			GeneralBatalla.GetComponent<Camera>().enabled = false;
+			PlayerScripts.GetComponent<PlayerManagement>().BattleMode = false;
 		}
 	}
 }

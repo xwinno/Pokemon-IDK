@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Placaje
   m_EditorClassIdentifier: 
   Nombre: Placaje
-  "Da\xF1o": 40
+  Potencia: 40
   Precision: 100
   PP: 35
   Tipo: Normal

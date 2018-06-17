@@ -15,7 +15,9 @@ public class SistemaBatalla : MonoBehaviour {
 	public PokemonBattle PokemonRival;
 	public IniciarBatallaLegendarios MusicaBatalla;
 	public GameObject PlayerScripts;
-	public int Daño;
+	public GameObject GeneralCamera;
+	public GameObject ThirdCamera;
+	public int Potencia;
 	bool Movimientos;
 	
 	
@@ -61,6 +63,9 @@ public class SistemaBatalla : MonoBehaviour {
 	public void Huir()
 	{	
 		MusicaBatalla = Object.FindObjectOfType<IniciarBatallaLegendarios>();
+		GeneralCamera.GetComponent<Camera>().enabled = false;
+		ThirdCamera.GetComponent<Camera>().enabled = true;
+		ThirdCamera.GetComponent<CameraController>().enabled = true;
 		BackgroundBatalla.SetActive(false);
 		MusicaBatalla.BattleMusic.Stop();
 		PlayerScripts.GetComponent<PlayerManagement>().BattleMode = false;
@@ -69,8 +74,7 @@ public class SistemaBatalla : MonoBehaviour {
 	{
 		var movimiento = EquipoPokemon.instance.pokemons[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
-		Daño = movimiento.movimientos[0].Daño;
-		PokemonRival.HP -= Daño;
+		PokemonRival.HP -= movimiento.movimientos[0].Potencia;
 	}
 
 }
