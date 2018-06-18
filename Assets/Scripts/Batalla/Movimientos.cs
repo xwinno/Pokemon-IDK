@@ -9,5 +9,7 @@ public class Movimientos : ScriptableObject {
 	public int Precision;
 	public int PP;
 	public string Tipo;
+	public bool Ofensivo;
+	public bool AtaqueEspecial;
 
 }

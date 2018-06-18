@@ -22,6 +22,7 @@ public class LanzarPokeball : MonoBehaviour {
 		{
 			//SpawnPokemon
 			EquipoPokemon.instance.pokemons[0].modelo.transform.position = this.gameObject.transform.position;
+			EquipoPokemon.instance.pokemons[0].modelo.GetComponent<Follow>().enabled = true;
 			Instantiate(EquipoPokemon.instance.pokemons[0].modelo);
 			Destroy(this.gameObject);
 			

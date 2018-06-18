@@ -21,12 +21,22 @@ MonoBehaviour:
   altura: 0.3
   peso: 4
   nivel: 5
+  nivelMaximo: 100
   salud: 48
   ataque: 48
   defensa: 48
   ataqueEspecial: 48
   defensaEspecial: 48
   velocidad: 48
+  experienciaBase: 61
+  experienciaActual: 0
+  tipo: Normal
+  expRapido: 0
+  expNormal: 1
+  expLento: 0
+  expParabolico: 0
+  expErratico: 0
+  expFluctuante: 0
   movimientos:
   - {fileID: 11400000, guid: ca4bb9480f6e1e1489f1de76a9907bc6, type: 2}
   - {fileID: 0}

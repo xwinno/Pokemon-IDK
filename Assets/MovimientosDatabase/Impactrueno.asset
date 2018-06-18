@@ -16,3 +16,5 @@ MonoBehaviour:
   Precision: 100
   PP: 30
   Tipo: Electrico
+  Ofensivo: 1
+  AtaqueEspecial: 1

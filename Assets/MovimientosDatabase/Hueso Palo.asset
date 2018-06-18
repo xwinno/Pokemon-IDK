@@ -16,3 +16,5 @@ MonoBehaviour:
   Precision: 85
   PP: 20
   Tipo: Tierra
+  Ofensivo: 1
+  AtaqueEspecial: 0

@@ -9,16 +9,23 @@ public class PokemonBattle : MonoBehaviour {
 	public AudioSource BackgroundBatalla;
 	public GameObject MovimientosUI;
 	public GameObject MenuBatallaUI;
+	public GameObject BatallaPokemonUI;
 	public GameObject ThirdPerson;
 	public GameObject GeneralBatalla;
 	public int HP;
 	public	int Ataque;
+	public int AtaqueEspecial;
 	public int Defensa;
+	public int DefensaEspecial;
 
 	// Use this for initialization
 	void Start () 
 	{
 		HP = pokemon.salud;
+		Ataque = pokemon.ataque;
+		AtaqueEspecial = pokemon.ataqueEspecial;
+		Defensa = pokemon.defensa;
+		DefensaEspecial = pokemon.defensaEspecial;
 	}
 	
 	// Update is called once per frame
@@ -29,6 +36,7 @@ public class PokemonBattle : MonoBehaviour {
 			this.gameObject.SetActive(false);
 			MenuBatallaUI.SetActive(false);
 			MovimientosUI.SetActive(false);
+			BatallaPokemonUI.SetActive(false);
 			BackgroundBatalla.Stop();
 			ThirdPerson.GetComponent<Camera>().enabled = true;
 			ThirdPerson.GetComponent<CameraController>().enabled = true;

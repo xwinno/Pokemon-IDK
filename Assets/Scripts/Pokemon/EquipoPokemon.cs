@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EquipoPokemon : MonoBehaviour {
 
-	public  static EquipoPokemon instance;
+	public static EquipoPokemon instance;
 	public int espacio = 6;
 
 	public List<PokemonData> pokemons = new List<PokemonData>();

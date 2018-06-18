@@ -5,10 +5,13 @@ using UnityEngine;
 public class IniciarBatallaLegendarios : MonoBehaviour {
 
 	public GameObject PlayerScripts;
+	public GameObject PositionPlayer;
+	public GameObject PlayerMonster;
 	public GameObject CloseCameraEnemy;
 	public GameObject CloseCameraTeam;
 	public GameObject ThirdPerson;
 	public AudioSource BattleMusic;
+	public GameObject BatallaPokemonUI;
 	public GameObject Background;
 	public GameObject GeneralCamera;
 	public float RadioVisible = 1.5f;
@@ -32,8 +35,17 @@ public class IniciarBatallaLegendarios : MonoBehaviour {
 			GeneralCamera.GetComponent<Camera>().enabled = true;
 			ThirdPerson.GetComponent<Camera>().enabled = false;
 			ThirdPerson.GetComponent<CameraController>().enabled = false;
+			PlayerScripts.transform.rotation = PositionPlayer.transform.rotation;
+			PlayerScripts.transform.position = PositionPlayer.transform.position;
+			
+			EquipoPokemon.instance.pokemons[0].modelo.transform.position = PlayerMonster.transform.position;
+			EquipoPokemon.instance.pokemons[0].modelo.GetComponent<Follow>().enabled = false;
+			Instantiate(EquipoPokemon.instance.pokemons[0].modelo);
+
+			this.gameObject.GetComponent<EnemigoPokemonBattleUI>().enabled = true;
 			BattleMusic.Play();
 			Background.SetActive(true);
+			BatallaPokemonUI.SetActive(true);
 		}
 	}
 	void OnDrawGizmos()
