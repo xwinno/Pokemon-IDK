@@ -17,11 +17,12 @@ public class SistemaBatalla : MonoBehaviour {
 	public GameObject BackgroundMovimientos;
 	public GameObject BatallaPokemonUI;
 	public PokemonBattle PokemonRival;
-	public IniciarBatallaLegendarios MusicaBatalla;
+	public IniciarBatalla MusicaBatalla;
 	public GameObject PlayerScripts;
 	public GameObject GeneralCamera;
 	public GameObject ThirdCamera;
 	public int Potencia;
+	public bool Despawn;
 	bool Movimientos;
 	
 	
@@ -67,21 +68,29 @@ public class SistemaBatalla : MonoBehaviour {
 
 	}
 
+	void LateUpdate()
+	{
+		Despawn = false;
+	}
 
 	void UpdateUI()
 	{
-		icono.sprite = EquipoPokemon.instance.pokemons[0].icon;
-		nombre.text = EquipoPokemon.instance.pokemons[0].nombre;
-		vida.text = "HP - " + 0 + "/" + EquipoPokemon.instance.pokemons[0].salud;
-
-		var LevelUp = EquipoPokemon.instance.pokemons[0].nivel + 1;
-
+		if(EquipoPokemon.instance.pokemons.Count != 0)
+		{
+			icono.sprite = EquipoPokemon.instance.pokemons[0].icon;
+			nombre.text = EquipoPokemon.instance.pokemons[0].nombre;
+			vida.text = "HP - " + 0 + "/" + EquipoPokemon.instance.pokemons[0].salud;
+			
+			var LevelUp = EquipoPokemon.instance.pokemons[0].nivel + 1;
+			
 		if(LevelUp < 100)
 		{
 			var siguienteNivel = (6 * (Mathf.Pow(LevelUp,3)) / 5  - 15 * (Mathf.Pow(LevelUp, 2)) + 100 * (LevelUp) - 140);
 			var atexto = siguienteNivel.ToString();
 			//experiencia.text = "EXP - " + PokemonRival.pokemon.experienciaActual + "/" + atexto;
-		}	
+		}
+			
+		}
 	}
 
 
@@ -89,7 +98,8 @@ public class SistemaBatalla : MonoBehaviour {
 
 	public void Huir()
 	{	
-		MusicaBatalla = Object.FindObjectOfType<IniciarBatallaLegendarios>();
+		MusicaBatalla = Object.FindObjectOfType<IniciarBatalla>();
+		Despawn = true;
 		GeneralCamera.GetComponent<Camera>().enabled = false;
 		ThirdCamera.GetComponent<Camera>().enabled = true;
 		ThirdCamera.GetComponent<CameraController>().enabled = true;

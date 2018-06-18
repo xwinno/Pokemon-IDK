@@ -339,6 +339,7 @@ GameObject:
   - component: {fileID: 54650695447683072}
   - component: {fileID: 95051081663472748}
   - component: {fileID: 114079149547991970}
+  - component: {fileID: 114407346992785430}
   m_Layer: 0
   m_Name: Vulpix
   m_TagString: Untagged
@@ -1635,8 +1636,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1298073193701262}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.218337, y: 0.031590816, z: 0.14289846}
+  m_LocalRotation: {x: 0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4254036014796252}
@@ -2245,7 +2246,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1298073193701262}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b69ffac191a81468926395eb3629f5, type: 3}
   m_Name: 
@@ -2255,6 +2256,18 @@ MonoBehaviour:
   Velocidad: 1.5
   VelocidadR: 4
   MinDistance: 2
+--- !u!114 &114407346992785430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298073193701262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e59a7eb75fbfd468ec927da4201acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdministradorScripts: {fileID: 0}
 --- !u!137 &137811045468030954
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

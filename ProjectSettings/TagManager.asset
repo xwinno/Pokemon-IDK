@@ -11,6 +11,7 @@ TagManager:
   - Pokeball
   - Pokemon
   - PlayerPosition
+  - Administrador
   layers:
   - Default
   - TransparentFX

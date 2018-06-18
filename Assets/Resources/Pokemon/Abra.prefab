@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 54237423741205452}
   - component: {fileID: 95423983405542886}
   - component: {fileID: 114418252899998758}
+  - component: {fileID: 114890064995101408}
   m_Layer: 0
   m_Name: Abra
   m_TagString: Untagged
@@ -1679,8 +1680,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055674395618966}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -4.20915, y: 0.031423114, z: 4.136129}
+  m_LocalRotation: {x: 0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4256234783432258}
@@ -2215,7 +2216,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055674395618966}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b69ffac191a81468926395eb3629f5, type: 3}
   m_Name: 
@@ -2225,6 +2226,18 @@ MonoBehaviour:
   Velocidad: 1.5
   VelocidadR: 4
   MinDistance: 2
+--- !u!114 &114890064995101408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055674395618966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e59a7eb75fbfd468ec927da4201acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdministradorScripts: {fileID: 0}
 --- !u!137 &137288578227259020
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

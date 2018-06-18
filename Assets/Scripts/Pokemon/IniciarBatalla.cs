@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IniciarBatallaLegendarios : MonoBehaviour {
+public class IniciarBatalla : MonoBehaviour {
 
 	public GameObject PlayerScripts;
 	public GameObject PositionPlayer;
@@ -39,6 +39,7 @@ public class IniciarBatallaLegendarios : MonoBehaviour {
 			PlayerScripts.transform.position = PositionPlayer.transform.position;
 			
 			EquipoPokemon.instance.pokemons[0].modelo.transform.position = PlayerMonster.transform.position;
+			EquipoPokemon.instance.pokemons[0].modelo.transform.rotation = PlayerMonster.transform.rotation;
 			EquipoPokemon.instance.pokemons[0].modelo.GetComponent<Follow>().enabled = false;
 			Instantiate(EquipoPokemon.instance.pokemons[0].modelo);
 

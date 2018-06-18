@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 54699497952787920}
   - component: {fileID: 95289201422846568}
   - component: {fileID: 114435292100370890}
+  - component: {fileID: 114289377671372724}
   m_Layer: 0
   m_Name: Ditto
   m_TagString: Untagged
@@ -617,8 +618,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1248325404856946}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.6108553, y: 0.030871348, z: 0.88598245}
+  m_LocalRotation: {x: 0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4476828701837920}
@@ -988,13 +989,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114435292100370890
+--- !u!114 &114289377671372724
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1248325404856946}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84e59a7eb75fbfd468ec927da4201acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AdministradorScripts: {fileID: 0}
+--- !u!114 &114435292100370890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1248325404856946}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b69ffac191a81468926395eb3629f5, type: 3}
   m_Name: 

@@ -56,4 +56,5 @@ public class Follow : MonoBehaviour {
 			PlayerScripts.GetComponent<PlayerManagement>().pokemonCount = 0;
 		}
 	}
+
 }
