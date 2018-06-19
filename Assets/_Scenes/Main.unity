@@ -3508,6 +3508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemon: {fileID: 11400000, guid: cbadd8f4cc173184596396dc45ef3f3c, type: 2}
   PlayerScripts: {fileID: 695596111}
+  AdministradorScripts: {fileID: 0}
   BackgroundBatalla: {fileID: 804214399}
   MovimientosUI: {fileID: 902081473}
   MenuBatallaUI: {fileID: 540768513}
@@ -5471,6 +5472,7 @@ MonoBehaviour:
   ThirdCamera: {fileID: 428499433}
   Potencia: 0
   Despawn: 0
+  HP: 0
 --- !u!114 &422679922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9132,7 +9134,7 @@ Animator:
   m_GameObject: {fileID: 671497786}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e2ab9011dc101514faefd93e186b71a7, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0eabc086759923a4bbaa71699ae3c9ae, type: 2}
+  m_Controller: {fileID: 9100000, guid: 28aed0eca4f0b364b9c65f2fdd452a7b, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10165,7 +10167,7 @@ Animator:
   m_GameObject: {fileID: 758226651}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: fe46f48c29711a1479b3804ad6e58ee1, type: 3}
-  m_Controller: {fileID: 9100000, guid: d2825d6eaf9fc0143992a8f3579365b0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 333140a8b129e974191d7a600becd1f3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12105,7 +12107,7 @@ Animator:
   m_GameObject: {fileID: 889964771}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: cde4425ecf6cbd9449efa2cc54e8d101, type: 3}
-  m_Controller: {fileID: 9100000, guid: 293de8e4822e2a5418e2840cd8837ecc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5a6f75f004cd9a24f836e7ed8569b015, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13501,7 +13503,7 @@ Animator:
   m_GameObject: {fileID: 979581544}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4c3f4428aca9cca4eb1b3d92791bbc98, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0c526c68ce805d146b3d720ee132c42f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6bf094c6c864a9c458815ed5d67d1bcb, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -21747,7 +21749,7 @@ Animator:
   m_GameObject: {fileID: 1544421622}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4253c0e9f14bb184ebdde13e5478ee3a, type: 3}
-  m_Controller: {fileID: 9100000, guid: a253974a1043c34429db1777eead6c25, type: 2}
+  m_Controller: {fileID: 9100000, guid: f68437f34d39c7440a36940b790857c7, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -27690,7 +27692,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978246991}
-  m_LocalRotation: {x: -0.702529, y: -0.07226755, z: 0.704297, w: 0.07208518}
+  m_LocalRotation: {x: -0.702529, y: -0.07226754, z: 0.704297, w: 0.07208517}
   m_LocalPosition: {x: -0.00020756882, y: -0.0005693101, z: 0.000729508}
   m_LocalScale: {x: 0.9999998, y: 0.99999994, z: 1.0000001}
   m_Children:
