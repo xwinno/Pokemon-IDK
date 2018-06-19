@@ -13,6 +13,7 @@ public class SistemaBatalla : MonoBehaviour {
 	public Image icono;
 	public Text nombre;
 	public Text vida;
+	public Text experiencia;
 	public GameObject BackgroundBatalla;
 	public GameObject BackgroundMovimientos;
 	public GameObject BatallaPokemonUI;
@@ -23,12 +24,14 @@ public class SistemaBatalla : MonoBehaviour {
 	public GameObject ThirdCamera;
 	public int Potencia;
 	public bool Despawn;
+	public int HP;
 	bool Movimientos;
 	
 	
 	public void EncenderMovimientos()
 	{
 		var movimiento = EquipoPokemon.instance.pokemons[0];
+		HP = EquipoPokemon.instance.pokemons[0].salud;
 
 		BackgroundBatalla.SetActive(false);
 		BackgroundMovimientos.SetActive(true);
@@ -79,7 +82,7 @@ public class SistemaBatalla : MonoBehaviour {
 		{
 			icono.sprite = EquipoPokemon.instance.pokemons[0].icon;
 			nombre.text = EquipoPokemon.instance.pokemons[0].nombre;
-			vida.text = "HP - " + 0 + "/" + EquipoPokemon.instance.pokemons[0].salud;
+			vida.text = "HP - " + HP + "/" + EquipoPokemon.instance.pokemons[0].salud;
 			
 			var LevelUp = EquipoPokemon.instance.pokemons[0].nivel + 1;
 			
@@ -87,14 +90,11 @@ public class SistemaBatalla : MonoBehaviour {
 		{
 			var siguienteNivel = (6 * (Mathf.Pow(LevelUp,3)) / 5  - 15 * (Mathf.Pow(LevelUp, 2)) + 100 * (LevelUp) - 140);
 			var atexto = siguienteNivel.ToString();
-			//experiencia.text = "EXP - " + PokemonRival.pokemon.experienciaActual + "/" + atexto;
+			experiencia.text = "EXP - " + EquipoPokemon.instance.pokemons[0].experienciaActual + "/" + atexto;
 		}
 			
 		}
 	}
-
-
-
 
 	public void Huir()
 	{	
@@ -111,23 +111,42 @@ public class SistemaBatalla : MonoBehaviour {
 	public void Movi1()
 	{
 		var movimiento = EquipoPokemon.instance.pokemons[0];
-		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 
 		if (movimiento.movimientos[0].Ofensivo == true && movimiento.movimientos[0].AtaqueEspecial == false)
 		{
-			var Daño = (movimiento.nivel * movimiento.ataque * movimiento.movimientos[0].Potencia) / (25 * PokemonRival.Defensa + 2);
-			PokemonRival.HP -= Mathf.RoundToInt(Daño);
-			Debug.Log(Daño);
+			AtaqueFisico1();
 		}
 
 		if (movimiento.movimientos[0].Ofensivo == true && movimiento.movimientos[0].AtaqueEspecial == true)
 		{
-			var Daño = (movimiento.nivel * movimiento.ataqueEspecial * movimiento.movimientos[0].Potencia) / (25 * PokemonRival.DefensaEspecial + 2);
-			PokemonRival.HP -= Mathf.RoundToInt(Daño);
-			Debug.Log(Daño);
+			AtaqueEspecial1();
 		}
+	}
 
-		
+	void AtaqueFisico1()
+	{
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+
+		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
+		var Daño = (movimiento.nivel * movimiento.ataque * movimiento.movimientos[0].Potencia) / (25 * PokemonRival.Defensa + 2);
+
+		PokemonPlayer.GetComponent<Animator>().SetTrigger("AtaqueFis1");
+		PokemonRival.HP -= Mathf.RoundToInt(Daño);
+		Debug.Log(Daño);
+	}
+
+	void AtaqueEspecial1()
+	{
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+
+		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
+		var Daño = (movimiento.nivel * movimiento.ataqueEspecial * movimiento.movimientos[0].Potencia) / (25 * PokemonRival.DefensaEspecial + 2);
+
+		PokemonPlayer.GetComponent<Animator>().SetTrigger("AtaqueEsp1");
+		PokemonRival.HP -= Mathf.RoundToInt(Daño);
+		Debug.Log(Daño);
 	}
 
 	public void Movi2()
@@ -137,17 +156,39 @@ public class SistemaBatalla : MonoBehaviour {
 		
 		if (movimiento.movimientos[1].Ofensivo == true && movimiento.movimientos[1].AtaqueEspecial == false)
 		{
-			var Daño = (movimiento.nivel * movimiento.ataque * movimiento.movimientos[1].Potencia) / (25 * PokemonRival.Defensa + 2);
-			PokemonRival.HP -= Mathf.RoundToInt(Daño);
-			Debug.Log(Daño);
+			AtaqueFisico2();
 		}
 
 		if (movimiento.movimientos[1].Ofensivo == true && movimiento.movimientos[1].AtaqueEspecial == true)
 		{
-			var Daño = (movimiento.nivel * movimiento.ataqueEspecial * movimiento.movimientos[1].Potencia) / (25 * PokemonRival.DefensaEspecial + 2);
-			PokemonRival.HP -= Mathf.RoundToInt(Daño);
-			Debug.Log(Daño);
+			AtaqueEspecial2();
 		}
+	}
+
+	void AtaqueFisico2()
+	{
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+
+		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
+		var Daño = (movimiento.nivel * movimiento.ataque * movimiento.movimientos[1].Potencia) / (25 * PokemonRival.Defensa + 2);
+		
+		PokemonPlayer.GetComponent<Animator>().SetTrigger("AtaqueFis1");
+		PokemonRival.HP -= Mathf.RoundToInt(Daño);
+		Debug.Log(Daño);
+	}
+
+	void AtaqueEspecial2()
+	{
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+		
+		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
+		var Daño = (movimiento.nivel * movimiento.ataqueEspecial * movimiento.movimientos[1].Potencia) / (25 * PokemonRival.DefensaEspecial + 2);
+		
+		PokemonPlayer.GetComponent<Animator>().SetTrigger("AtaqueEsp1");
+		PokemonRival.HP -= Mathf.RoundToInt(Daño);
+		Debug.Log(Daño);
 	}
 
 	public void Movi3()
@@ -157,17 +198,39 @@ public class SistemaBatalla : MonoBehaviour {
 		
 		if (movimiento.movimientos[2].Ofensivo == true && movimiento.movimientos[2].AtaqueEspecial == false)
 		{
-			var Daño = (movimiento.nivel * movimiento.ataque * movimiento.movimientos[2].Potencia) / (25 * PokemonRival.Defensa + 2);
-			PokemonRival.HP -= Mathf.RoundToInt(Daño);
-			Debug.Log(Daño);
+			AtaqueFisico3();
 		}
 
 		if (movimiento.movimientos[2].Ofensivo == true && movimiento.movimientos[2].AtaqueEspecial == true)
 		{
-			var Daño = (movimiento.nivel * movimiento.ataqueEspecial * movimiento.movimientos[2].Potencia) / (25 * PokemonRival.DefensaEspecial + 2);
-			PokemonRival.HP -= Mathf.RoundToInt(Daño);
-			Debug.Log(Daño);
+			AtaqueEspecial3();
 		}
+	}
+
+	void AtaqueFisico3()
+	{	
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+
+		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
+		var Daño = (movimiento.nivel * movimiento.ataque * movimiento.movimientos[2].Potencia) / (25 * PokemonRival.Defensa + 2);
+		
+		PokemonPlayer.GetComponent<Animator>().SetTrigger("AtaqueFis1");
+		PokemonRival.HP -= Mathf.RoundToInt(Daño);
+		Debug.Log(Daño);
+	}
+
+	void AtaqueEspecial3()
+	{
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+
+		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
+		var Daño = (movimiento.nivel * movimiento.ataqueEspecial * movimiento.movimientos[2].Potencia) / (25 * PokemonRival.DefensaEspecial + 2);
+		
+		PokemonPlayer.GetComponent<Animator>().SetTrigger("AtaqueEsp1");
+		PokemonRival.HP -= Mathf.RoundToInt(Daño);
+		Debug.Log(Daño);
 	}
 
 	public void Movi4()
@@ -177,16 +240,39 @@ public class SistemaBatalla : MonoBehaviour {
 		
 		if (movimiento.movimientos[3].Ofensivo == true && movimiento.movimientos[3].AtaqueEspecial == false)
 		{
-			var Daño = (movimiento.nivel * movimiento.ataque * movimiento.movimientos[3].Potencia) / (25 * PokemonRival.Defensa + 2);
-			PokemonRival.HP -= Mathf.RoundToInt(Daño);
-			Debug.Log(Daño);
+			AtaqueFisico4();
 		}
 
 		if (movimiento.movimientos[3].Ofensivo == true && movimiento.movimientos[3].AtaqueEspecial == true)
 		{
-			var Daño = (movimiento.nivel * movimiento.ataqueEspecial * movimiento.movimientos[3].Potencia) / (25 * PokemonRival.DefensaEspecial + 2);
-			PokemonRival.HP -= Mathf.RoundToInt(Daño);
-			Debug.Log(Daño);
+			AtaqueEspecial4();
 		}
+	}
+
+	void AtaqueFisico4()
+	{
+
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+
+		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
+		var Daño = (movimiento.nivel * movimiento.ataque * movimiento.movimientos[3].Potencia) / (25 * PokemonRival.Defensa + 2);
+		
+		PokemonPlayer.GetComponent<Animator>().SetTrigger("AtaqueFis1");
+		PokemonRival.HP -= Mathf.RoundToInt(Daño);
+		Debug.Log(Daño);
+
+	}
+
+	void AtaqueEspecial4()
+	{
+		var movimiento = EquipoPokemon.instance.pokemons[0];
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+
+		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
+		var Daño = (movimiento.nivel * movimiento.ataqueEspecial * movimiento.movimientos[3].Potencia) / (25 * PokemonRival.DefensaEspecial + 2);
+		PokemonPlayer.GetComponent<Animator>().SetTrigger("AtaqueEsp1");
+		PokemonRival.HP -= Mathf.RoundToInt(Daño);
+		Debug.Log(Daño);
 	}
 }

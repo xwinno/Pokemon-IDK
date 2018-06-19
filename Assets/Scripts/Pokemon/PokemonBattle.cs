@@ -6,6 +6,7 @@ public class PokemonBattle : MonoBehaviour {
 
 	public PokemonData pokemon;
 	public GameObject PlayerScripts;
+	public GameObject AdministradorScripts;
 	public AudioSource BackgroundBatalla;
 	public GameObject MovimientosUI;
 	public GameObject MenuBatallaUI;
@@ -21,6 +22,7 @@ public class PokemonBattle : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		AdministradorScripts = GameObject.Find("AdministradorJuego");
 		HP = pokemon.salud;
 		Ataque = pokemon.ataque;
 		AtaqueEspecial = pokemon.ataqueEspecial;
@@ -31,17 +33,28 @@ public class PokemonBattle : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (HP <= 0)
+		if (HP == 0)
 		{
-			this.gameObject.SetActive(false);
-			MenuBatallaUI.SetActive(false);
-			MovimientosUI.SetActive(false);
-			BatallaPokemonUI.SetActive(false);
-			BackgroundBatalla.Stop();
-			ThirdPerson.GetComponent<Camera>().enabled = true;
-			ThirdPerson.GetComponent<CameraController>().enabled = true;
-			GeneralBatalla.GetComponent<Camera>().enabled = false;
-			PlayerScripts.GetComponent<PlayerManagement>().BattleMode = false;
+			this.gameObject.GetComponent<Animator>().SetTrigger("Derrotado");
+			AdministradorScripts.GetComponent<SistemaBatalla>().Despawn = true;
 		}
+
+		else if( HP < 0)
+		{
+			HP = 0;
+		}
+	}
+
+	public void Despawn()
+	{
+		MenuBatallaUI.SetActive(false);
+		MovimientosUI.SetActive(false);
+		BatallaPokemonUI.SetActive(false);
+		BackgroundBatalla.Stop();
+		ThirdPerson.GetComponent<Camera>().enabled = true;
+		ThirdPerson.GetComponent<CameraController>().enabled = true;
+		GeneralBatalla.GetComponent<Camera>().enabled = false;
+		PlayerScripts.GetComponent<PlayerManagement>().BattleMode = false;
+		Destroy(this.gameObject);
 	}
 }

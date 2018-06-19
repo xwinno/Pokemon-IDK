@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PokemonBattleDespawn : MonoBehaviour {
+	
 	public GameObject AdministradorScripts;
 
 	void Awake()
