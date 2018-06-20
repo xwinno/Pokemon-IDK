@@ -15,3 +15,6 @@ Battle System
 Inventory Storage
 PC Pokemon Storage
 Dialogs
+
+Lastest Video Update:
+https://www.youtube.com/watch?v=gF3QePwzwzc
