@@ -99,6 +99,9 @@ public class SistemaBatalla : MonoBehaviour {
 	public void Huir()
 	{	
 		MusicaBatalla = Object.FindObjectOfType<IniciarBatalla>();
+		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
+		PokemonRival.transform.position = PokemonRival.GetComponent<IniciarBatalla>().PrePosition;
+		PokemonRival.transform.rotation = PokemonRival.GetComponent<IniciarBatalla>().PreRotation;
 		Despawn = true;
 		GeneralCamera.GetComponent<Camera>().enabled = false;
 		ThirdCamera.GetComponent<Camera>().enabled = true;
