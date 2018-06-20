@@ -81,7 +81,7 @@ public class SistemaBatalla : MonoBehaviour {
 		{
 			HP = EquipoPokemon.instance.pokemons[0].salud;
 			icono.sprite = EquipoPokemon.instance.pokemons[0].icon;
-			nombre.text = EquipoPokemon.instance.pokemons[0].nombre;
+			nombre.text = EquipoPokemon.instance.pokemons[0].nombre + " - NV. " + EquipoPokemon.instance.pokemons[0].nivel.ToString();
 			vida.text = "HP - " + HP + "/" + EquipoPokemon.instance.pokemons[0].salud;
 			
 			var LevelUp = EquipoPokemon.instance.pokemons[0].nivel + 1;

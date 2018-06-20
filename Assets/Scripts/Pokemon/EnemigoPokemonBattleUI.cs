@@ -18,7 +18,7 @@ public class EnemigoPokemonBattleUI : MonoBehaviour {
 		PokemonRival = this.gameObject.GetComponent<PokemonBattle>();
 		MenuPokemon.SetActive(false);
 		icon.sprite = PokemonRival.pokemon.icon;
-		nombre.text = PokemonRival.pokemon.nombre;
+		nombre.text = PokemonRival.pokemon.nombre + " - NV. " + PokemonRival.pokemon.nivel;
 		vida.text = "HP - " + PokemonRival.HP + "/" + PokemonRival.pokemon.salud;
 		
 	}

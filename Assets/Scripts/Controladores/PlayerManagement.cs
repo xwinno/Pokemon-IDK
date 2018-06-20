@@ -21,11 +21,6 @@ public class PlayerManagement : MonoBehaviour {
 	public float FuerzaCaida = 2.5f;
 	public LayerMask TierraLayers;
 
-	//Variables Sistema Monedas
-	public int Monedas;
-	public Text TextoMonedas;
-	public AudioSource CoinSound;
-
 	//Variables Generales
 	public AudioSource Music;
 	public GameObject PlayerScripts;
@@ -49,16 +44,6 @@ public class PlayerManagement : MonoBehaviour {
 
 #endregion
 
-#region Sistema Monedas
-
-	//Actualiza la cantidad de monedas que aparecen en la UI
-	void UpdateCoins()
-	{
-		TextoMonedas.text = Monedas.ToString();
-	}
-
-#endregion
-
 #region  Sistema Animaciones
 
 	//Controla las animaciones
@@ -74,7 +59,6 @@ public class PlayerManagement : MonoBehaviour {
 	// Use this for initialization
 	void Awake () 
 	{
-		Monedas = 0;
 		CPlayer = GetComponent<CapsuleCollider>();
 		RPlayer = GetComponent<Rigidbody>();
 	}
@@ -134,7 +118,6 @@ public class PlayerManagement : MonoBehaviour {
 		}
 
 		//Llamadas
-		UpdateCoins();
 		PlayerAnimations();
 	}
 

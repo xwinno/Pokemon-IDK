@@ -9,31 +9,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bed70977a0385e40b4d3ac4eb677c33, type: 3}
-  m_Name: Dialga
+  m_Name: Celebi
   m_EditorClassIdentifier: 
-  modelo: {fileID: 1100487176455500, guid: 4e38d82d31ef4144193da4544691181f, type: 2}
-  icon: {fileID: 21300000, guid: f6abe38822fe3984e839e53e6922a777, type: 3}
-  nombre: Dialga
-  descripcion: "Un Pok\xE9mon de leyenda. Se dice que el tiempo comenz\xF3 a avanzar
-    cuando Dialga naci\xF3."
-  numeroPokedex: 483
-  altura: 5.41
-  peso: 683
-  nivel: 1
+  modelo: {fileID: 1496463387150688, guid: 2eacef686e4743e4e9bbf0f828e29e8d, type: 2}
+  icon: {fileID: 21300000, guid: 15fac3c920dc7de4090f704b69d9881a, type: 3}
+  nombre: Celebi
+  descripcion: "Este Pok\xE9mon vino del futuro haciendo un viaje en el tiempo. Hay
+    quien piensa que, mientras Celebi siga apareciendo, hay un futuro brillante y
+    esperanzador."
+  numeroPokedex: 251
+  altura: 0.61
+  peso: 5
+  nivel: 5
   nivelMaximo: 100
   salud: 100
-  ataque: 120
-  defensa: 120
-  ataqueEspecial: 150
+  ataque: 100
+  defensa: 100
+  ataqueEspecial: 100
   defensaEspecial: 100
-  velocidad: 90
-  experienciaBase: 220
+  velocidad: 100
+  experienciaBase: 64
   experienciaActual: 0
-  tipo: Acero
+  tipo: Psiquico
   expRapido: 0
   expNormal: 0
-  expLento: 1
-  expParabolico: 0
+  expLento: 0
+  expParabolico: 1
   expErratico: 0
   expFluctuante: 0
   movimientos:
