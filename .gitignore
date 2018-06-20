@@ -4,6 +4,9 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+Assets/PlayMaker/*
+Assets/AmplifyShaderEditor/*
+Assets/Gizmos/*
 
 # Visual Studio cache directory
 .vs/

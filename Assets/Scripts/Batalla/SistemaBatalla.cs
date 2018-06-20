@@ -31,7 +31,6 @@ public class SistemaBatalla : MonoBehaviour {
 	public void EncenderMovimientos()
 	{
 		var movimiento = EquipoPokemon.instance.pokemons[0];
-		HP = EquipoPokemon.instance.pokemons[0].salud;
 
 		BackgroundBatalla.SetActive(false);
 		BackgroundMovimientos.SetActive(true);
@@ -80,6 +79,7 @@ public class SistemaBatalla : MonoBehaviour {
 	{
 		if(EquipoPokemon.instance.pokemons.Count != 0)
 		{
+			HP = EquipoPokemon.instance.pokemons[0].salud;
 			icono.sprite = EquipoPokemon.instance.pokemons[0].icon;
 			nombre.text = EquipoPokemon.instance.pokemons[0].nombre;
 			vida.text = "HP - " + HP + "/" + EquipoPokemon.instance.pokemons[0].salud;
