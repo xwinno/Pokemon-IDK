@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 95583096115861598}
   - component: {fileID: 114098215773509896}
   - component: {fileID: 114257006730531058}
+  - component: {fileID: 114353747361410706}
   m_Layer: 0
   m_Name: Pikachu
   m_TagString: Pokemon
@@ -1485,7 +1486,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1241737289161876}
   m_LocalRotation: {x: 0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.12}
+  m_LocalPosition: {x: 2.60331, y: 0.030858587, z: -3.2852962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4870331460404764}
@@ -2009,7 +2010,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1241737289161876}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b69ffac191a81468926395eb3629f5, type: 3}
   m_Name: 
@@ -2031,6 +2032,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdministradorScripts: {fileID: 0}
+--- !u!114 &114353747361410706
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241737289161876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemon: {fileID: 11400000, guid: 9a2855223a7a7e340b763700edce7cc4, type: 2}
+  hpTotal: 0
+  ataqueTotal: 0
+  ataqueEspecialTotal: 0
+  defensaTotal: 0
+  defensaEspecialTotal: 0
+  velocidadTotal: 0
+  statsGeneradas: 0
 --- !u!136 &136982290220694736
 CapsuleCollider:
   m_ObjectHideFlags: 1

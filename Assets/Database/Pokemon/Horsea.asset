@@ -20,7 +20,7 @@ MonoBehaviour:
   numeroPokedex: 116
   altura: 0.41
   peso: 8
-  nivel: 5
+  nivel: 1
   nivelMaximo: 100
   salud: 30
   ataque: 40

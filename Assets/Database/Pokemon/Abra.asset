@@ -20,7 +20,7 @@ MonoBehaviour:
   numeroPokedex: 63
   altura: 0.9
   peso: 19.5
-  nivel: 5
+  nivel: 1
   nivelMaximo: 100
   salud: 25
   ataque: 20
@@ -30,7 +30,7 @@ MonoBehaviour:
   velocidad: 90
   experienciaBase: 0
   experienciaActual: 0
-  tipo: 
+  tipo: Psiquico
   expRapido: 0
   expNormal: 0
   expLento: 0

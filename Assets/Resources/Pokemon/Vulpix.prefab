@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 95051081663472748}
   - component: {fileID: 114079149547991970}
   - component: {fileID: 114407346992785430}
+  - component: {fileID: 114631278914115894}
   m_Layer: 0
   m_Name: Vulpix
   m_TagString: Untagged
@@ -2268,6 +2269,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdministradorScripts: {fileID: 0}
+--- !u!114 &114631278914115894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298073193701262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemon: {fileID: 11400000, guid: 4b2bff91cf0a20445b825563c2351c2a, type: 2}
+  hpTotal: 0
+  ataqueTotal: 0
+  ataqueEspecialTotal: 0
+  defensaTotal: 0
+  defensaEspecialTotal: 0
+  velocidadTotal: 0
 --- !u!137 &137811045468030954
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

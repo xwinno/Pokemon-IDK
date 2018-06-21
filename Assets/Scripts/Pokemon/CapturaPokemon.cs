@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class CapturaPokemon : Interactivo {
 
@@ -14,9 +15,9 @@ public class CapturaPokemon : Interactivo {
 
 	void Capturar()
 	{
-            bool FueCapturado = EquipoPokemon.instance.Añadir(pokemon);
+         bool FueCapturado = EquipoPokemon.instance.Añadir(pokemon);
 
-			if(FueCapturado)
-			Destroy(gameObject);
+		if(FueCapturado)
+		Destroy(gameObject);
 	}
 }

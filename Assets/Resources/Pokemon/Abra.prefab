@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 95423983405542886}
   - component: {fileID: 114418252899998758}
   - component: {fileID: 114890064995101408}
+  - component: {fileID: 114523061386435576}
   m_Layer: 0
   m_Name: Abra
   m_TagString: Untagged
@@ -2226,6 +2227,24 @@ MonoBehaviour:
   Velocidad: 1.5
   VelocidadR: 4
   MinDistance: 2
+--- !u!114 &114523061386435576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1055674395618966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemon: {fileID: 11400000, guid: 7e32631975904c74b82d4e6f0285a59c, type: 2}
+  hpTotal: 0
+  ataqueTotal: 0
+  ataqueEspecialTotal: 0
+  defensaTotal: 0
+  defensaEspecialTotal: 0
+  velocidadTotal: 0
 --- !u!114 &114890064995101408
 MonoBehaviour:
   m_ObjectHideFlags: 1

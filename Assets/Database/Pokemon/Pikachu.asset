@@ -20,7 +20,7 @@ MonoBehaviour:
   numeroPokedex: 25
   altura: 0.4
   peso: 6
-  nivel: 5
+  nivel: 1
   nivelMaximo: 100
   salud: 35
   ataque: 55
