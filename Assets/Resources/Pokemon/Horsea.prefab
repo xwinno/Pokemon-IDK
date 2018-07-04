@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 114297836478404016}
   m_Layer: 0
   m_Name: Horsea
-  m_TagString: Untagged
+  m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1788,12 +1788,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemon: {fileID: 11400000, guid: f23eeefdf3ed1a04da21c7c2652e0654, type: 2}
+  nombre: 
+  nivel: 0
+  experienciaActual: 0
   hpTotal: 0
   ataqueTotal: 0
   ataqueEspecialTotal: 0
   defensaTotal: 0
   defensaEspecialTotal: 0
   velocidadTotal: 0
+  Mov1: {fileID: 0}
+  Mov2: {fileID: 0}
+  Mov3: {fileID: 0}
+  Mov4: {fileID: 0}
 --- !u!114 &114743151670534064
 MonoBehaviour:
   m_ObjectHideFlags: 1

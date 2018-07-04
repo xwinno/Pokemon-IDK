@@ -52,7 +52,7 @@ public class Follow : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.R) && PlayerScripts.GetComponent<PlayerManagement>().pokemonCount == 1)
 		{
 			
-			Destroy(this.gameObject);
+			this.gameObject.SetActive(false);
 			PlayerScripts.GetComponent<PlayerManagement>().pokemonCount = 0;
 		}
 	}

@@ -22,7 +22,7 @@ MonoBehaviour:
   peso: 6
   nivel: 1
   nivelMaximo: 100
-  salud: 35
+  salud: 14
   ataque: 55
   defensa: 40
   ataqueEspecial: 50

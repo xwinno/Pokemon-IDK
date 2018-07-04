@@ -1,0 +1,10 @@
+{
+    "Pokemon": [
+        {"NombrePokemon": "Pokemon1", "NumeroPokedex": 0},
+        {"NombrePokemon": "Pokemon2", "NumeroPokedex": 0},
+        {"NombrePokemon": "Pokemon3", "NumeroPokedex": 0},
+        {"NombrePokemon": "Pokemon4", "NumeroPokedex": 0},
+        {"NombrePokemon": "Pokemon5", "NumeroPokedex": 0},
+        {"NombrePokemon": "Pokemon6", "NumeroPokedex": 0}
+    ]
+}

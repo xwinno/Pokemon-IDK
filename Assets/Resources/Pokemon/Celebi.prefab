@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 114359185343991606}
   m_Layer: 0
   m_Name: Celebi
-  m_TagString: Untagged
+  m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2407,12 +2407,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemon: {fileID: 11400000, guid: 5592131a70a7ecd43a0991e5c4a2bcf0, type: 2}
+  nombre: 
+  nivel: 0
+  experienciaActual: 0
   hpTotal: 0
   ataqueTotal: 0
   ataqueEspecialTotal: 0
   defensaTotal: 0
   defensaEspecialTotal: 0
   velocidadTotal: 0
+  Mov1: {fileID: 0}
+  Mov2: {fileID: 0}
+  Mov3: {fileID: 0}
+  Mov4: {fileID: 0}
 --- !u!137 &137011602486245058
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

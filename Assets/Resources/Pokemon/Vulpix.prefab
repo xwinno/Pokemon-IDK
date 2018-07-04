@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 114631278914115894}
   m_Layer: 0
   m_Name: Vulpix
-  m_TagString: Untagged
+  m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2281,12 +2281,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemon: {fileID: 11400000, guid: 4b2bff91cf0a20445b825563c2351c2a, type: 2}
+  nombre: 
+  nivel: 0
+  experienciaActual: 0
   hpTotal: 0
   ataqueTotal: 0
   ataqueEspecialTotal: 0
   defensaTotal: 0
   defensaEspecialTotal: 0
   velocidadTotal: 0
+  Mov1: {fileID: 0}
+  Mov2: {fileID: 0}
+  Mov3: {fileID: 0}
+  Mov4: {fileID: 0}
 --- !u!137 &137811045468030954
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114283048770289950}
   m_Layer: 0
   m_Name: Cubone
-  m_TagString: Untagged
+  m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -963,7 +963,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1050592056348842}
   m_LocalRotation: {x: 0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.12}
+  m_LocalPosition: {x: -12.285376, y: 0.03405726, z: 10.6485195}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4907401669584092}
@@ -1596,19 +1596,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemon: {fileID: 11400000, guid: 448746b3a829f1941bbf34fdd7a50bd4, type: 2}
+  nombre: 
+  nivel: 0
+  experienciaActual: 0
   hpTotal: 0
   ataqueTotal: 0
   ataqueEspecialTotal: 0
   defensaTotal: 0
   defensaEspecialTotal: 0
   velocidadTotal: 0
+  Mov1: {fileID: 0}
+  Mov2: {fileID: 0}
+  Mov3: {fileID: 0}
+  Mov4: {fileID: 0}
 --- !u!114 &114366645196808220
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1050592056348842}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b69ffac191a81468926395eb3629f5, type: 3}
   m_Name: 

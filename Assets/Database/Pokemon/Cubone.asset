@@ -20,7 +20,7 @@ MonoBehaviour:
   numeroPokedex: 104
   altura: 0.4
   peso: 6.5
-  nivel: 5
+  nivel: 1
   nivelMaximo: 100
   salud: 50
   ataque: 50

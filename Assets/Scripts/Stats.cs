@@ -8,12 +8,19 @@ public class Stats : MonoBehaviour {
 	//Variables
 
 	public PokemonData pokemon;
+	public string nombre;
+	public int nivel;
+	public float experienciaActual;
 	public int hpTotal;
 	public int ataqueTotal;
 	public int ataqueEspecialTotal;
 	public int defensaTotal;
 	public int defensaEspecialTotal;
 	public int velocidadTotal;
+	public Movimientos Mov1;
+	public Movimientos Mov2;
+	public Movimientos Mov3;
+	public Movimientos Mov4;
 
 	void Awake()
 	{
@@ -23,6 +30,12 @@ public class Stats : MonoBehaviour {
 			calcularDefensa();
 			calcularDefensaEspecial();
 			calcularVelocidad();
+			
+			nombre = pokemon.nombre;
+			Mov1 = pokemon.movimientos[0];
+			Mov2 = pokemon.movimientos[1];
+			Mov3 = pokemon.movimientos[2];
+			Mov4 = pokemon.movimientos[3];
 	}
 
 	void calcularHP()

@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 114552882076253798}
   m_Layer: 0
   m_Name: Ditto
-  m_TagString: Untagged
+  m_TagString: Pokemon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1030,12 +1030,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemon: {fileID: 11400000, guid: 9dfd29ff6102c9a4fa90bedd09dabb64, type: 2}
+  nombre: 
+  nivel: 0
+  experienciaActual: 0
   hpTotal: 0
   ataqueTotal: 0
   ataqueEspecialTotal: 0
   defensaTotal: 0
   defensaEspecialTotal: 0
   velocidadTotal: 0
+  Mov1: {fileID: 0}
+  Mov2: {fileID: 0}
+  Mov3: {fileID: 0}
+  Mov4: {fileID: 0}
 --- !u!137 &137974850876155130
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
