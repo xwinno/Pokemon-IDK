@@ -190,7 +190,6 @@ GameObject:
   - component: {fileID: 136264353023471536}
   - component: {fileID: 54349376423599266}
   - component: {fileID: 95526681326421956}
-  - component: {fileID: 114212283239096526}
   m_Layer: 0
   m_Name: Dialga
   m_TagString: Pokemon
@@ -2300,31 +2299,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114212283239096526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1100487176455500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pokemon: {fileID: 11400000, guid: cbadd8f4cc173184596396dc45ef3f3c, type: 2}
-  nombre: 
-  nivel: 0
-  experienciaActual: 0
-  hpTotal: 0
-  ataqueTotal: 0
-  ataqueEspecialTotal: 0
-  defensaTotal: 0
-  defensaEspecialTotal: 0
-  velocidadTotal: 0
-  Mov1: {fileID: 0}
-  Mov2: {fileID: 0}
-  Mov3: {fileID: 0}
-  Mov4: {fileID: 0}
 --- !u!136 &136144947068804730
 CapsuleCollider:
   m_ObjectHideFlags: 1

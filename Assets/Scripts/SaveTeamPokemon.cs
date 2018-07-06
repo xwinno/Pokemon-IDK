@@ -42,68 +42,133 @@ public class SaveTeamPokemon : MonoBehaviour {
 	{
 		var Equipo = EquipoPokemon.instance.equipoPokemon;
 
-		//FirstSlot Pokemon
 		PokemonSave FirstSlot = JsonUtility.FromJson<PokemonSave>(readFileOne);
+		PokemonSave SecondSlot = JsonUtility.FromJson<PokemonSave>(readFileSecond);
+		PokemonSave ThirdSlot = JsonUtility.FromJson<PokemonSave>(readFileThird);
+		PokemonSave FourthSlot = JsonUtility.FromJson<PokemonSave>(readFileFourth);
+		PokemonSave FiveSlot = JsonUtility.FromJson<PokemonSave>(readFileFive);
+		PokemonSave SixSlot = JsonUtility.FromJson<PokemonSave>(readFileSix);
 
+		//FirstSlot Pokemon
 		if(Equipo.Count >= 1)
 		{
 			FirstSlot.nombre = Equipo[0].nombre;
 			FirstSlot.numeroPokedex = Equipo[0].numeroPokedex - 1;
+
 			var WriteOne = JsonUtility.ToJson(FirstSlot);
 			File.WriteAllText(filePathOne, WriteOne);
 		}
 
-		//SecondSlot Pokemon
-		PokemonSave SecondSlot = JsonUtility.FromJson<PokemonSave>(readFileSecond);
+		else if(Equipo.Count < 1)
+		{
+			FirstSlot.numeroPokedex = 0;
+			SecondSlot.numeroPokedex = 0;
+			ThirdSlot.numeroPokedex = 0;
+			FourthSlot.numeroPokedex = 0;
+			FiveSlot.numeroPokedex = 0;
+			SixSlot.numeroPokedex = 0;
 
+			var WriteOne = JsonUtility.ToJson(FirstSlot);
+			File.WriteAllText(filePathOne, WriteOne);
+		}
+
+
+		//SecondSlot Pokemon
 		if(Equipo.Count >= 2)
 		{
 			SecondSlot.nombre = Equipo[1].nombre;
 			SecondSlot.numeroPokedex = Equipo[1].numeroPokedex - 1;
+
+			var WriteSecond = JsonUtility.ToJson(SecondSlot);
+			File.WriteAllText(filePathSecond, WriteSecond);
+		}
+
+		else if(Equipo.Count < 2)
+		{
+			SecondSlot.numeroPokedex = 0;
+			ThirdSlot.numeroPokedex = 0;
+			FourthSlot.numeroPokedex = 0;
+			FiveSlot.numeroPokedex = 0;
+			SixSlot.numeroPokedex = 0;
+
 			var WriteSecond = JsonUtility.ToJson(SecondSlot);
 			File.WriteAllText(filePathSecond, WriteSecond);
 		}
 
 		//ThirdSlot Pokemon
-		PokemonSave ThirdSlot = JsonUtility.FromJson<PokemonSave>(readFileThird);
-
 		if(Equipo.Count >= 3)
 		{
 			ThirdSlot.nombre = Equipo[2].nombre;
 			ThirdSlot.numeroPokedex = Equipo[2].numeroPokedex - 1;
+
+			var WriteThird = JsonUtility.ToJson(ThirdSlot);
+			File.WriteAllText(filePathThird, WriteThird);
+		}
+
+			else if(Equipo.Count < 3)
+		{
+			ThirdSlot.numeroPokedex = 0;
+			FourthSlot.numeroPokedex = 0;
+			FiveSlot.numeroPokedex = 0;
+			SixSlot.numeroPokedex = 0;
+
 			var WriteThird = JsonUtility.ToJson(ThirdSlot);
 			File.WriteAllText(filePathThird, WriteThird);
 		}
 		
 		//FourthSlot Pokemon
-		PokemonSave FourthSlot = JsonUtility.FromJson<PokemonSave>(readFileFourth);
-
 		if(Equipo.Count >= 4)
 		{
 			FourthSlot.nombre = Equipo[3].nombre;
 			FourthSlot.numeroPokedex = Equipo[3].numeroPokedex - 1;
+
+			var WriteFourth = JsonUtility.ToJson(FourthSlot);
+			File.WriteAllText(filePathFourth, WriteFourth);
+		}
+
+			else if(Equipo.Count < 4)
+		{
+			FourthSlot.numeroPokedex = 0;
+			FiveSlot.numeroPokedex = 0;
+			SixSlot.numeroPokedex = 0;
+
 			var WriteFourth = JsonUtility.ToJson(FourthSlot);
 			File.WriteAllText(filePathFourth, WriteFourth);
 		}
 
 		//FiveSlot Pokemon
-		PokemonSave FiveSlot = JsonUtility.FromJson<PokemonSave>(readFileFive);
-
 		if(Equipo.Count >= 5)
 		{
 			FiveSlot.nombre = Equipo[4].nombre;
 			FiveSlot.numeroPokedex = Equipo[4].numeroPokedex - 1;
+
+			var WriteFive = JsonUtility.ToJson(FiveSlot);
+			File.WriteAllText(filePathFive, WriteFive);
+		}
+
+			else if(Equipo.Count < 5)
+		{
+			FiveSlot.numeroPokedex = 0;
+			SixSlot.numeroPokedex = 0;
+
 			var WriteFive = JsonUtility.ToJson(FiveSlot);
 			File.WriteAllText(filePathFive, WriteFive);
 		}
 		
 		//SixSlot Pokemon
-		PokemonSave SixSlot = JsonUtility.FromJson<PokemonSave>(readFileSix);
-
 		if(Equipo.Count == 6)
 		{
 			SixSlot.nombre = Equipo[5].nombre;
 			SixSlot.numeroPokedex = Equipo[5].numeroPokedex - 1;
+
+			var WriteSix = JsonUtility.ToJson(SixSlot);
+			File.WriteAllText(filePathSix, WriteSix);
+		}
+
+			else if(Equipo.Count < 6)
+		{
+			SixSlot.numeroPokedex = 0;
+
 			var WriteSix = JsonUtility.ToJson(SixSlot);
 			File.WriteAllText(filePathSix, WriteSix);
 		}
@@ -177,5 +242,4 @@ public class PokemonSave {
 
 	public string nombre;
 	public int numeroPokedex;
-
 }

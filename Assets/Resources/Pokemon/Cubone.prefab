@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 95169171200327530}
   - component: {fileID: 114366645196808220}
   - component: {fileID: 114251213566251720}
-  - component: {fileID: 114283048770289950}
   m_Layer: 0
   m_Name: Cubone
   m_TagString: Pokemon
@@ -1584,31 +1583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdministradorScripts: {fileID: 0}
---- !u!114 &114283048770289950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1050592056348842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pokemon: {fileID: 11400000, guid: 448746b3a829f1941bbf34fdd7a50bd4, type: 2}
-  nombre: 
-  nivel: 0
-  experienciaActual: 0
-  hpTotal: 0
-  ataqueTotal: 0
-  ataqueEspecialTotal: 0
-  defensaTotal: 0
-  defensaEspecialTotal: 0
-  velocidadTotal: 0
-  Mov1: {fileID: 0}
-  Mov2: {fileID: 0}
-  Mov3: {fileID: 0}
-  Mov4: {fileID: 0}
 --- !u!114 &114366645196808220
 MonoBehaviour:
   m_ObjectHideFlags: 1

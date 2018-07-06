@@ -640,7 +640,6 @@ GameObject:
   - component: {fileID: 95307208464014294}
   - component: {fileID: 114917013874594078}
   - component: {fileID: 114355030597664916}
-  - component: {fileID: 114492009367401378}
   m_Layer: 0
   m_Name: Eevee
   m_TagString: Pokemon
@@ -2319,31 +2318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdministradorScripts: {fileID: 0}
---- !u!114 &114492009367401378
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1586202532614988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pokemon: {fileID: 11400000, guid: eb71f791fcb922042bc83c2b42072403, type: 2}
-  nombre: 
-  nivel: 0
-  experienciaActual: 0
-  hpTotal: 0
-  ataqueTotal: 0
-  ataqueEspecialTotal: 0
-  defensaTotal: 0
-  defensaEspecialTotal: 0
-  velocidadTotal: 0
-  Mov1: {fileID: 0}
-  Mov2: {fileID: 0}
-  Mov3: {fileID: 0}
-  Mov4: {fileID: 0}
 --- !u!114 &114917013874594078
 MonoBehaviour:
   m_ObjectHideFlags: 1

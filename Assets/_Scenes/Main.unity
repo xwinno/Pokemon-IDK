@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.5651618, g: 0.6357212, b: 0.7219677, a: 1}
+  m_IndirectSpecularColor: {r: 0.5651618, g: 0.6357211, b: 0.72196746, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7277,6 +7277,7 @@ GameObject:
   - component: {fileID: 422679922}
   - component: {fileID: 422679923}
   - component: {fileID: 422679924}
+  - component: {fileID: 422679925}
   m_Layer: 0
   m_Name: AdministradorJuego
   m_TagString: Administrador
@@ -7538,6 +7539,28 @@ MonoBehaviour:
   elegirPokemonCamera: {fileID: 915307575}
   eevee: {fileID: 979581544}
   pikachu: {fileID: 1191349482}
+--- !u!114 &422679925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422679916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpTotal: 000000000000000000000000000000000000000000000000
+  hpActual: 000000000000000000000000000000000000000000000000
+  ataqueTotal: 000000000000000000000000000000000000000000000000
+  ataqueEspecialTotal: 000000000000000000000000000000000000000000000000
+  defensaTotal: 000000000000000000000000000000000000000000000000
+  defensaEspecialTotal: 000000000000000000000000000000000000000000000000
+  velocidadTotal: 000000000000000000000000000000000000000000000000
+  Mov1: {fileID: 0}
+  Mov2: {fileID: 0}
+  Mov3: {fileID: 0}
+  Mov4: {fileID: 0}
 --- !u!1 &426843392
 GameObject:
   m_ObjectHideFlags: 0
@@ -9237,6 +9260,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 422679924}
         m_MethodName: SaveCameraData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 422679925}
+        m_MethodName: SaveStats
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18267,7 +18301,6 @@ GameObject:
   - component: {fileID: 979581548}
   - component: {fileID: 979581547}
   - component: {fileID: 979581546}
-  - component: {fileID: 979581545}
   m_Layer: 0
   m_Name: Eevee
   m_TagString: Untagged
@@ -18275,31 +18308,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &979581545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 979581544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pokemon: {fileID: 11400000, guid: 9a2855223a7a7e340b763700edce7cc4, type: 2}
-  nombre: 
-  nivel: 0
-  experienciaActual: 0
-  hpTotal: 0
-  ataqueTotal: 0
-  ataqueEspecialTotal: 0
-  defensaTotal: 0
-  defensaEspecialTotal: 0
-  velocidadTotal: 0
-  Mov1: {fileID: 0}
-  Mov2: {fileID: 0}
-  Mov3: {fileID: 0}
-  Mov4: {fileID: 0}
 --- !u!114 &979581546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26320,7 +26328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -20.140625, y: -57.860107}
+  m_AnchoredPosition: {x: -20.140625, y: -57.86035}
   m_SizeDelta: {x: 258.86, y: 79.05}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1404667257
@@ -31170,6 +31178,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 422679924}
         m_MethodName: LoadCameraData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 422679925}
+        m_MethodName: LoadStats
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38053,7 +38072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 24.999992, y: -57.860107}
+  m_AnchoredPosition: {x: 25, y: -57.86035}
   m_SizeDelta: {x: 258.86, y: 56.88}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2060868958

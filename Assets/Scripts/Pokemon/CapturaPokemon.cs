@@ -15,9 +15,12 @@ public class CapturaPokemon : Interactivo {
 
 	void Capturar()
 	{
-         bool FueCapturado = EquipoPokemon.instance.Añadir(pokemon);
+        bool FueCapturado = EquipoPokemon.instance.Añadir(pokemon);
 
 		if(FueCapturado)
-		Destroy(gameObject);
+		{
+			Stats.instance.calcularHP();
+			Destroy(gameObject);
+		}
 	}
 }

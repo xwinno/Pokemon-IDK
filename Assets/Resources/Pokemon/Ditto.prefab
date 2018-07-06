@@ -190,7 +190,6 @@ GameObject:
   - component: {fileID: 95289201422846568}
   - component: {fileID: 114435292100370890}
   - component: {fileID: 114289377671372724}
-  - component: {fileID: 114552882076253798}
   m_Layer: 0
   m_Name: Ditto
   m_TagString: Pokemon
@@ -1008,7 +1007,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1248325404856946}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b69ffac191a81468926395eb3629f5, type: 3}
   m_Name: 
@@ -1018,31 +1017,6 @@ MonoBehaviour:
   Velocidad: 2
   VelocidadR: 4
   MinDistance: 2
---- !u!114 &114552882076253798
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248325404856946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33956c784ade1da44ac7eb2e2ba89782, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pokemon: {fileID: 11400000, guid: 9dfd29ff6102c9a4fa90bedd09dabb64, type: 2}
-  nombre: 
-  nivel: 0
-  experienciaActual: 0
-  hpTotal: 0
-  ataqueTotal: 0
-  ataqueEspecialTotal: 0
-  defensaTotal: 0
-  defensaEspecialTotal: 0
-  velocidadTotal: 0
-  Mov1: {fileID: 0}
-  Mov2: {fileID: 0}
-  Mov3: {fileID: 0}
-  Mov4: {fileID: 0}
 --- !u!137 &137974850876155130
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

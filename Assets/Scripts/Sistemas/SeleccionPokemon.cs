@@ -68,6 +68,7 @@ public class SeleccionPokemon : Interactivo {
 			//Añades a tu equipo al elegido
 			Debug.Log("Adquieres " + pokemon.name);
             EquipoPokemon.instance.Añadir(pokemon);
+			Stats.instance.calcularHP();
 			Prefabs.GetComponent<AdministradorPrefabs>().Prefabs[0].GetComponent<LanzarPokeball>().pokemon = pokemon;
 
 			//Mover Camara
@@ -86,6 +87,7 @@ public class SeleccionPokemon : Interactivo {
 			//Añades a tu equipo al elegido
 			Debug.Log("Adquieres " + pokemon2.name);
             EquipoPokemon.instance.Añadir(pokemon2);
+			Stats.instance.calcularHP();
 			Prefabs.GetComponent<AdministradorPrefabs>().Prefabs[0].GetComponent<LanzarPokeball>().pokemon = pokemon2;
 			this.gameObject.GetComponent<SeleccionPokemon>().enabled = false;
 
