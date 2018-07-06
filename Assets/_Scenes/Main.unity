@@ -7275,6 +7275,8 @@ GameObject:
   - component: {fileID: 422679920}
   - component: {fileID: 422679921}
   - component: {fileID: 422679922}
+  - component: {fileID: 422679923}
+  - component: {fileID: 422679924}
   m_Layer: 0
   m_Name: AdministradorJuego
   m_TagString: Administrador
@@ -7377,6 +7379,165 @@ MonoBehaviour:
   SlotControl: {fileID: 1306382454}
   MenuPokemon: {fileID: 199976055}
   PlayerScripts: {fileID: 695596111}
+--- !u!114 &422679923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422679916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5412fd41f9916744f832ecaf9ccccebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Database:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 9a2855223a7a7e340b763700edce7cc4, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 4b2bff91cf0a20445b825563c2351c2a, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 7e32631975904c74b82d4e6f0285a59c, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 448746b3a829f1941bbf34fdd7a50bd4, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: f23eeefdf3ed1a04da21c7c2652e0654, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 9dfd29ff6102c9a4fa90bedd09dabb64, type: 2}
+  - {fileID: 11400000, guid: eb71f791fcb922042bc83c2b42072403, type: 2}
+--- !u!114 &422679924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422679916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d83a980a4cb20c4db0def920085fb93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elegirPokemonCamera: {fileID: 915307575}
+  eevee: {fileID: 979581544}
+  pikachu: {fileID: 1191349482}
 --- !u!1 &426843392
 GameObject:
   m_ObjectHideFlags: 0
@@ -8999,7 +9160,7 @@ GameObject:
   - component: {fileID: 511332026}
   - component: {fileID: 511332025}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Save
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9063,8 +9224,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 422679923}
         m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 422679924}
+        m_MethodName: SaveCameraData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16943,6 +17115,7 @@ MonoBehaviour:
   ThirdCamera: {fileID: 428499433}
   ElegirPokemonCamara: {fileID: 915307575}
   PlayerScripts: {fileID: 695596111}
+  estadoCamaraTercera: 0
 --- !u!114 &915307578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18167,6 +18340,8 @@ MonoBehaviour:
   ElegirPokemon: {fileID: 915307581}
   pokemon: {fileID: 11400000, guid: eb71f791fcb922042bc83c2b42072403, type: 2}
   pokemon2: {fileID: 11400000, guid: 9a2855223a7a7e340b763700edce7cc4, type: 2}
+  EeeveeChoose: 0
+  PikachuChoose: 0
 --- !u!95 &979581547
 Animator:
   serializedVersion: 3
@@ -30918,7 +31093,7 @@ GameObject:
   - component: {fileID: 1679328348}
   - component: {fileID: 1679328347}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Load
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30982,8 +31157,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 422679923}
         m_MethodName: Load
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 422679924}
+        m_MethodName: LoadCameraData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
