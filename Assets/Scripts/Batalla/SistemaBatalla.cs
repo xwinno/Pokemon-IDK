@@ -30,7 +30,7 @@ public class SistemaBatalla : MonoBehaviour {
 	
 	public void EncenderMovimientos()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 
 		BackgroundBatalla.SetActive(false);
 		BackgroundMovimientos.SetActive(true);
@@ -77,20 +77,20 @@ public class SistemaBatalla : MonoBehaviour {
 
 	void UpdateUI()
 	{
-		if(EquipoPokemon.instance.pokemons.Count != 0)
+		if(EquipoPokemon.instance.equipoPokemon.Count != 0)
 		{
-			HP = EquipoPokemon.instance.pokemons[0].salud;
-			icono.sprite = EquipoPokemon.instance.pokemons[0].icon;
-			nombre.text = EquipoPokemon.instance.pokemons[0].nombre + " - NV. " + EquipoPokemon.instance.pokemons[0].nivel.ToString();
-			vida.text = "HP - " + HP + "/" + EquipoPokemon.instance.pokemons[0].salud;
+			HP = EquipoPokemon.instance.equipoPokemon[0].salud;
+			icono.sprite = EquipoPokemon.instance.equipoPokemon[0].icon;
+			nombre.text = EquipoPokemon.instance.equipoPokemon[0].nombre + " - NV. " + EquipoPokemon.instance.equipoPokemon[0].nivel.ToString();
+			vida.text = "HP - " + HP + "/" + EquipoPokemon.instance.equipoPokemon[0].salud;
 			
-			var LevelUp = EquipoPokemon.instance.pokemons[0].nivel + 1;
+			var LevelUp = EquipoPokemon.instance.equipoPokemon[0].nivel + 1;
 			
 		if(LevelUp < 100)
 		{
 			var siguienteNivel = (6 * (Mathf.Pow(LevelUp,3)) / 5  - 15 * (Mathf.Pow(LevelUp, 2)) + 100 * (LevelUp) - 140);
 			var atexto = siguienteNivel.ToString();
-			experiencia.text = "EXP - " + EquipoPokemon.instance.pokemons[0].experienciaActual + "/" + atexto;
+			experiencia.text = "EXP - " + EquipoPokemon.instance.equipoPokemon[0].experienciaActual + "/" + atexto;
 		}
 			
 		}
@@ -113,7 +113,7 @@ public class SistemaBatalla : MonoBehaviour {
 	}
 	public void Movi1()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 
 		if (movimiento.movimientos[0].Ofensivo == true && movimiento.movimientos[0].AtaqueEspecial == false)
 		{
@@ -128,7 +128,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	void AtaqueFisico1()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 
 		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
@@ -141,7 +141,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	void AtaqueEspecial1()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 
 		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
@@ -154,7 +154,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	public void Movi2()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 		
 		if (movimiento.movimientos[1].Ofensivo == true && movimiento.movimientos[1].AtaqueEspecial == false)
@@ -170,7 +170,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	void AtaqueFisico2()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 
 		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
@@ -183,7 +183,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	void AtaqueEspecial2()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 		
 		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
@@ -196,7 +196,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	public void Movi3()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 		
 		if (movimiento.movimientos[2].Ofensivo == true && movimiento.movimientos[2].AtaqueEspecial == false)
@@ -212,7 +212,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	void AtaqueFisico3()
 	{	
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 
 		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
@@ -225,7 +225,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	void AtaqueEspecial3()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 
 		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
@@ -238,7 +238,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	public void Movi4()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 		
 		if (movimiento.movimientos[3].Ofensivo == true && movimiento.movimientos[3].AtaqueEspecial == false)
@@ -255,7 +255,7 @@ public class SistemaBatalla : MonoBehaviour {
 	void AtaqueFisico4()
 	{
 
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 
 		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();
@@ -269,7 +269,7 @@ public class SistemaBatalla : MonoBehaviour {
 
 	void AtaqueEspecial4()
 	{
-		var movimiento = EquipoPokemon.instance.pokemons[0];
+		var movimiento = EquipoPokemon.instance.equipoPokemon[0];
 		PokemonRival = Object.FindObjectOfType<PokemonBattle>();
 
 		var PokemonPlayer = GameObject.FindObjectOfType<PokemonBattleDespawn>();

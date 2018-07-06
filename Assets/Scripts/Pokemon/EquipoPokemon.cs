@@ -8,7 +8,7 @@ public class EquipoPokemon : MonoBehaviour {
 	public static EquipoPokemon instance;
 	public int espacio = 6;
 
-	public List<PokemonData> pokemons = new List<PokemonData>();
+	public List<PokemonData> equipoPokemon = new List<PokemonData>();
 
 	public delegate void AlCambiarPokemon();
 	public AlCambiarPokemon AlCambiarPokemonLlamada;
@@ -31,20 +31,20 @@ public class EquipoPokemon : MonoBehaviour {
 
 	public bool Añadir(PokemonData pokemon)
 	{
-		if(pokemons.Count >= espacio)
+		if(equipoPokemon.Count >= espacio)
 		{
 			Debug.Log("No tienes espacio para añadir este pokemon");
 			return false;
 		}
 		
-		pokemons.Add(pokemon);
+		equipoPokemon.Add(pokemon);
 		AlCambiarPokemonLlamada.Invoke();
 		return true;
 	}
 
 	public void Eliminar(PokemonData pokemon)
 	{
-		pokemons.Remove(pokemon);
+		equipoPokemon.Remove(pokemon);
 		AlCambiarPokemonLlamada.Invoke();
 	}
 

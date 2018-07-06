@@ -1622,7 +1622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PokemonTransform: {fileID: 1050592056348842}
   Pokemon: {fileID: 95169171200327530}
-  Velocidad: 1.5
+  Velocidad: 2
   VelocidadR: 4
   MinDistance: 2
 --- !u!137 &137254722847058694

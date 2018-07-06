@@ -8,7 +8,7 @@ public class BattleIA : MonoBehaviour {
 
 	void Think()
 	{
-		if(EquipoPokemon.instance.pokemons[0].modelo.GetComponent<Stats>().hpTotal == 10)
+		if(EquipoPokemon.instance.equipoPokemon[0].modelo.GetComponent<Stats>().hpTotal == 10)
 		{
 
 		}

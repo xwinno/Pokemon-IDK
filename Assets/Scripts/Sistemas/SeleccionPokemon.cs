@@ -18,8 +18,8 @@ public class SeleccionPokemon : Interactivo {
 	public Animator ElegirPokemon;
 	public PokemonData pokemon;
 	public PokemonData pokemon2;
-	bool EeeveeChoose;
-	bool PikachuChoose;
+	public bool EeeveeChoose;
+	public bool PikachuChoose;
 
 #endregion
 
@@ -72,7 +72,7 @@ public class SeleccionPokemon : Interactivo {
 
 			//Mover Camara
 			ElegirPokemon.SetTrigger("ATerceraPersona");
-			Destroy(gameObject);
+			this.gameObject.SetActive(false);
 		}
 
 		else if (Input.GetKeyDown(KeyCode.E) && PikachuChoose == true)
@@ -91,7 +91,7 @@ public class SeleccionPokemon : Interactivo {
 
 			//Mover Camara
 			ElegirPokemon.SetTrigger("ATerceraPersona");
-			Destroy(ChoiseTwo.gameObject);
+			ChoiseTwo.gameObject.SetActive(false);
 		}
 	}
 

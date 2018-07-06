@@ -79,41 +79,41 @@ public class PlayerManagement : MonoBehaviour {
 
 		if(Input.GetKeyDown(KeyCode.Alpha2))
 		{
-			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
-			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[1];
-			EquipoPokemon.instance.pokemons[1] = TemporalSlot;
+			var TemporalSlot = EquipoPokemon.instance.equipoPokemon[0];
+			EquipoPokemon.instance.equipoPokemon[0] = EquipoPokemon.instance.equipoPokemon[1];
+			EquipoPokemon.instance.equipoPokemon[1] = TemporalSlot;
 			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha3))
 		{
-			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
-			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[2];
-			EquipoPokemon.instance.pokemons[2] = TemporalSlot;
+			var TemporalSlot = EquipoPokemon.instance.equipoPokemon[0];
+			EquipoPokemon.instance.equipoPokemon[0] = EquipoPokemon.instance.equipoPokemon[2];
+			EquipoPokemon.instance.equipoPokemon[2] = TemporalSlot;
 			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha4))
 		{
-			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
-			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[3];
-			EquipoPokemon.instance.pokemons[3] = TemporalSlot;
+			var TemporalSlot = EquipoPokemon.instance.equipoPokemon[0];
+			EquipoPokemon.instance.equipoPokemon[0] = EquipoPokemon.instance.equipoPokemon[3];
+			EquipoPokemon.instance.equipoPokemon[3] = TemporalSlot;
 			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha5))
 		{
-			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
-			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[4];
-			EquipoPokemon.instance.pokemons[4] = TemporalSlot;
+			var TemporalSlot = EquipoPokemon.instance.equipoPokemon[0];
+			EquipoPokemon.instance.equipoPokemon[0] = EquipoPokemon.instance.equipoPokemon[4];
+			EquipoPokemon.instance.equipoPokemon[4] = TemporalSlot;
 			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Alpha6))
 		{
-			var TemporalSlot = EquipoPokemon.instance.pokemons[0];
-			EquipoPokemon.instance.pokemons[0] = EquipoPokemon.instance.pokemons[5];
-			EquipoPokemon.instance.pokemons[5] = TemporalSlot;
+			var TemporalSlot = EquipoPokemon.instance.equipoPokemon[0];
+			EquipoPokemon.instance.equipoPokemon[0] = EquipoPokemon.instance.equipoPokemon[5];
+			EquipoPokemon.instance.equipoPokemon[5] = TemporalSlot;
 			EquipoPokemon.instance.AlCambiarPokemonLlamada.Invoke();
 		}
 

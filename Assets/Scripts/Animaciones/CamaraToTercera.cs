@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camara_A_Tercera : MonoBehaviour {
+public class CamaraToTercera : MonoBehaviour {
 
 	public GameObject ThirdCamera;
 	public GameObject ElegirPokemonCamara;
 	public GameObject PlayerScripts;
+	public bool estadoCamaraTercera = false;
 
 	void Awake()
 	{
@@ -14,17 +15,12 @@ public class Camara_A_Tercera : MonoBehaviour {
 		ThirdCamera.GetComponent<CameraController>().enabled = false;
 	}
 
-	void Update()
-	{
-		
-	}
-
 	public void ActivaTercera()
 	{
-		ThirdCamera.SetActive(true);
-		PlayerScripts.GetComponent<PlayerManagement>().enabled = true;
-		ThirdCamera.GetComponent<CameraController>().enabled = true;
-		ElegirPokemonCamara.SetActive(false);
+			ThirdCamera.SetActive(true);
+			PlayerScripts.GetComponent<PlayerManagement>().enabled = true;
+			ThirdCamera.GetComponent<CameraController>().enabled = true;
+			ElegirPokemonCamara.SetActive(false);
+			estadoCamaraTercera = true;
 	}
-
 }

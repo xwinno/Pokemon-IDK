@@ -48,10 +48,10 @@ public class IniciarBatalla : MonoBehaviour {
 			PlayerScripts.transform.rotation = PositionPlayer.transform.rotation;
 			PlayerScripts.transform.position = PositionPlayer.transform.position;
 			
-			EquipoPokemon.instance.pokemons[0].modelo.transform.position = PlayerMonster.transform.position;
-			EquipoPokemon.instance.pokemons[0].modelo.transform.rotation = PlayerMonster.transform.rotation;
-			EquipoPokemon.instance.pokemons[0].modelo.GetComponent<Follow>().enabled = false;
-			Instantiate(EquipoPokemon.instance.pokemons[0].modelo);
+			EquipoPokemon.instance.equipoPokemon[0].modelo.transform.position = PlayerMonster.transform.position;
+			EquipoPokemon.instance.equipoPokemon[0].modelo.transform.rotation = PlayerMonster.transform.rotation;
+			EquipoPokemon.instance.equipoPokemon[0].modelo.GetComponent<Follow>().enabled = false;
+			Instantiate(EquipoPokemon.instance.equipoPokemon[0].modelo);
 
 			this.gameObject.GetComponent<EnemigoPokemonBattleUI>().enabled = true;
 			BattleMusic.Play();
