@@ -19,7 +19,7 @@ public class CapturaPokemon : Interactivo {
 
 		if(FueCapturado)
 		{
-			Stats.instance.calcularHP();
+			Stats.instance.SaveStats();
 			Destroy(gameObject);
 		}
 	}

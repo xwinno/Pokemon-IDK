@@ -63,6 +63,5 @@ public class CameraData {
 
 	public bool estadoCamaraTercera;
 	public bool EeveeChoose;
-
 	public bool PikachuChoose;
 }

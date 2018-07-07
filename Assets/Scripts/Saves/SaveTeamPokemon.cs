@@ -24,17 +24,17 @@ public class SaveTeamPokemon : MonoBehaviour {
 
 	void Awake()
 	{
-		filePathOne = Application.dataPath + "/SaveData/FirstSlot.json";
+		filePathOne = Application.dataPath + "/SaveData/TeamData/FirstSlot.json";
 		readFileOne = File.ReadAllText(filePathOne);
-		filePathSecond = Application.dataPath + "/SaveData/SecondSlot.json";
+		filePathSecond = Application.dataPath + "/SaveData/TeamData/SecondSlot.json";
 		readFileSecond = File.ReadAllText(filePathSecond);
-		filePathThird = Application.dataPath + "/SaveData/ThirdSlot.json";
+		filePathThird = Application.dataPath + "/SaveData/TeamData/ThirdSlot.json";
 		readFileThird = File.ReadAllText(filePathThird);
-		filePathFourth = Application.dataPath + "/SaveData/FourthSlot.json";
+		filePathFourth = Application.dataPath + "/SaveData/TeamData/FourthSlot.json";
 		readFileFourth = File.ReadAllText(filePathFourth);
-		filePathFive = Application.dataPath + "/SaveData/FiveSlot.json";
+		filePathFive = Application.dataPath + "/SaveData/TeamData/FiveSlot.json";
 		readFileFive = File.ReadAllText(filePathFive);
-		filePathSix = Application.dataPath + "/SaveData/SixSlot.json";
+		filePathSix = Application.dataPath + "/SaveData/TeamData/SixSlot.json";
 		readFileSix = File.ReadAllText(filePathSix);
 	}
 
